@@ -1,0 +1,1464 @@
+<!-- مجله و مقالات تخصصی | چرم بهبد -->
+<!doctype html>
+
+<html dir="rtl" lang="fa">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="web_standard" name="shell-type" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100..900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      span,
+      a,
+      button,
+      input,
+      textarea,
+      select {
+        font-family:
+          "Yekan Bakh", "YekanBakh", "Vazirmatn", system-ui, sans-serif !important;
+      }
+    </style>
+    <style>
+      @layer base {
+        html,
+        body {
+          margin: 0;
+          padding: 0;
+        }
+        body {
+          overscroll-behavior: none;
+        }
+        main > :first-child {
+          margin-top: 0 !important;
+        }
+        main > :last-child {
+          margin-bottom: 0 !important;
+        }
+      }
+      ::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-primary-fixed-variant": "#693b1b",
+              "on-tertiary": "#ffffff",
+              "secondary-fixed": "#f6ded1",
+              "primary-container": "#8c5835",
+              "primary-fixed": "#ffdbc7",
+              "inverse-surface": "#343029",
+              "on-background": "#1f1b15",
+              "error-container": "#ffdad6",
+              outline: "#84746b",
+              "on-tertiary-fixed": "#301400",
+              "on-tertiary-fixed-variant": "#693b18",
+              "on-primary": "#ffffff",
+              surface: "#fff8f3",
+              "surface-container-lowest": "#ffffff",
+              "tertiary-container": "#8c5832",
+              "on-surface-variant": "#52443c",
+              "surface-container-highest": "#eae1d7",
+              "surface-container-low": "#fcf2e8",
+              tertiary: "#70411d",
+              secondary: "#6c5b51",
+              "on-secondary-fixed": "#251911",
+              "surface-bright": "#fff8f3",
+              "secondary-fixed-dim": "#d9c2b5",
+              "on-secondary-fixed-variant": "#54433a",
+              "secondary-container": "#f3dbce",
+              "primary-fixed-dim": "#fbb88e",
+              "on-primary-fixed": "#311300",
+              "on-primary-container": "#ffdbc6",
+              "on-error": "#ffffff",
+              "on-error-container": "#93000a",
+              primary: "#704120",
+              "on-secondary": "#ffffff",
+              "on-secondary-container": "#715f55",
+              "on-surface": "#1f1b15",
+              "surface-container-high": "#f0e7dd",
+              "outline-variant": "#d6c3b8",
+              "tertiary-fixed": "#ffdcc6",
+              "surface-variant": "#eae1d7",
+              error: "#ba1a1a",
+              "surface-tint": "#855230",
+              "inverse-on-surface": "#f9efe5",
+              "surface-dim": "#e1d9cf",
+              "inverse-primary": "#fbb88e",
+              background: "#fff8f3",
+              "tertiary-fixed-dim": "#fbb88a",
+              "surface-container": "#f6ece2",
+              "on-tertiary-container": "#ffdbc4",
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+            spacing: {
+              "margin-mobile": "1rem",
+              "space-xl": "2.5rem",
+              "space-lg": "1.5rem",
+              gutter: "1.5rem",
+              margin: "2.5rem",
+              "space-2xl": "4rem",
+              "space-xs": "0.25rem",
+              "space-sm": "0.5rem",
+              "gutter-mobile": "0.75rem",
+              "space-md": "1rem",
+            },
+            fontFamily: {
+              "label-md": ["Plus Jakarta Sans"],
+              "label-sm": ["Plus Jakarta Sans"],
+              "body-md": ["Plus Jakarta Sans"],
+              "display-hero-mobile": ["Plus Jakarta Sans"],
+              "title-md": ["Plus Jakarta Sans"],
+              "display-hero": ["Plus Jakarta Sans"],
+              "headline-md": ["Plus Jakarta Sans"],
+              "headline-md-mobile": ["Plus Jakarta Sans"],
+              "body-sm": ["Plus Jakarta Sans"],
+              "headline-lg-mobile": ["Plus Jakarta Sans"],
+              "body-lg": ["Plus Jakarta Sans"],
+              "price-lg": ["Plus Jakarta Sans"],
+              "headline-lg": ["Plus Jakarta Sans"],
+              "headline-sm": ["Plus Jakarta Sans"],
+              "price-sm": ["Plus Jakarta Sans"],
+            },
+            fontSize: {
+              "label-md": ["13px", { lineHeight: "18px", fontWeight: "600" }],
+              "label-sm": ["11px", { lineHeight: "16px", fontWeight: "500" }],
+              "body-md": ["14px", { lineHeight: "24px", fontWeight: "400" }],
+              "display-hero-mobile": [
+                "32px",
+                { lineHeight: "46px", fontWeight: "800" },
+              ],
+              "title-md": ["18px", { lineHeight: "28px", fontWeight: "600" }],
+              "display-hero": [
+                "48px",
+                { lineHeight: "68px", fontWeight: "800" },
+              ],
+              "headline-md": [
+                "28px",
+                { lineHeight: "42px", fontWeight: "600" },
+              ],
+              "headline-md-mobile": [
+                "22px",
+                { lineHeight: "34px", fontWeight: "600" },
+              ],
+              "body-sm": ["13px", { lineHeight: "22px", fontWeight: "400" }],
+              "headline-lg-mobile": [
+                "26px",
+                { lineHeight: "38px", fontWeight: "700" },
+              ],
+              "body-lg": ["16px", { lineHeight: "28px", fontWeight: "400" }],
+              "price-lg": ["22px", { lineHeight: "30px", fontWeight: "700" }],
+              "headline-lg": [
+                "36px",
+                { lineHeight: "52px", fontWeight: "700" },
+              ],
+              "headline-sm": [
+                "20px",
+                { lineHeight: "32px", fontWeight: "600" },
+              ],
+              "price-sm": ["16px", { lineHeight: "22px", fontWeight: "600" }],
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="shared.css" />
+  </head>
+  <body class="bg-background font-body-md text-on-surface antialiased">
+    <header
+      class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(43,30,22,0.04)]"
+    >
+      <div class="bg-surface-container-high py-space-xs px-margin">
+        <div
+          class="max-w-[1360px] mx-auto flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm"
+        >
+          <span class=""
+            >ارسال رایگان برای خریدهای بالای ۱.۵ میلیون تومان در سراسر
+            کشور</span
+          >
+          <div class="flex items-center gap-space-lg">
+            <span class="">ضمانت مادام‌العمر اصالت چرم طبیعی</span
+            ><span class="">پشتیبانی کارگاه و مشتریان: ۰۲۱-۸۸۹۹۰۰۱۱</span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="h-20 max-w-[1360px] mx-auto px-margin flex items-center justify-between gap-space-lg"
+      >
+        <div class="flex items-center gap-space-xl">
+          <a class="flex items-center gap-space-sm" data-path="home" href="#"
+            ><div
+              class="w-9 h-9 rounded-lg bg-primary-container text-on-primary flex items-center justify-center font-headline-sm text-headline-sm"
+            >
+              ب
+            </div>
+            <span
+              class="font-headline-sm text-headline-sm text-primary tracking-tight"
+              >چرم بهبد</span
+            ></a
+          >
+          <nav
+            class="hidden xl:flex items-center gap-space-md"
+            data-active-classes="bg-primary-container text-on-primary font-bold rounded-lg px-space-sm py-space-xs"
+          >
+            <a
+              class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors"
+              data-path="home"
+              href="#"
+              >صفحه اصلی</a
+            ><a
+              class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors"
+              data-path="bags"
+              href="#"
+              >کیف‌ها</a
+            ><a
+              class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors"
+              data-path="backpacks"
+              href="#"
+              >کوله‌پشتی</a
+            ><a
+              class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors"
+              data-path="accessories"
+              href="#"
+              >اکسسوری و جاکارتی</a
+            ><a
+              class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors"
+              data-path="belts"
+              href="#"
+              >کمربند</a
+            ><a
+              class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors"
+              data-path="gift-sets"
+              href="#"
+              >ست‌های هدیه</a
+            ><a
+              aria-current="page"
+              class="transition-colors bg-primary-container text-on-primary font-bold rounded-lg px-space-sm py-space-xs"
+              data-path="magazine"
+              href="#"
+              >مجله بهبد</a
+            ><a
+              class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors"
+              data-path="about"
+              href="#"
+              >درباره بهبد</a
+            >
+          </nav>
+        </div>
+        <div class="flex items-center gap-space-md">
+          <div
+            class="hidden md:flex items-center bg-surface-container rounded-full px-space-md py-space-xs"
+          >
+            <span
+              class="material-symbols-outlined text-outline text-[20px] ml-space-xs"
+              >search</span
+            ><input
+              class="bg-transparent border-0 outline-none font-body-sm text-body-sm text-on-surface placeholder-outline w-48"
+              placeholder="جست‌وجوی کیف، چرم دست‌دوز..."
+              type="text"
+            />
+          </div>
+          <a
+            class="p-space-xs rounded-full hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors flex items-center"
+            data-path="account"
+            href="#"
+            ><span class="material-symbols-outlined text-[22px]"
+              >person</span
+            ></a
+          ><a
+            class="p-space-xs rounded-full hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors flex items-center"
+            data-path="wishlist"
+            href="#"
+            ><span class="material-symbols-outlined text-[22px]"
+              >favorite</span
+            ></a
+          ><a
+            class="relative p-space-xs rounded-full hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors flex items-center"
+            data-path="cart"
+            href="#"
+            ><span class="material-symbols-outlined text-[22px]"
+              >shopping_bag</span
+            ><span
+              class="absolute -top-1 -right-1 bg-primary text-on-primary font-label-sm text-label-sm w-5 h-5 rounded-full flex items-center justify-center"
+              >۳</span
+            ></a
+          ><img
+            alt="Profile"
+            class="w-8 h-8 rounded-full object-cover mr-space-xs"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2IhbS823eGR-sUrz-HGmMZNKDksrQ0fU-oHUFiqwZJUDvx77SDat6kfV8qvgyUEaW2JCCYpGyzUN-WCenX7oAl-Ftq3HpTtzh2lWHCHEnKPu0cwcOQOqamByJD49F9v6D20MIAGXwniEZQws1-54BsBTUgCwmZg1kM5s8LRrgdxWKFuoOpT9pnT2XEyOSZnOy4la1_0G8sYm-fCky6bmu5xYoBMoCrBIzSuaEfcs"
+          />
+        </div>
+      </div>
+    </header>
+    <main class="w-full pt-20 bg-background">
+      <div class="flex flex-col w-full">
+        <!-- SECTION 1: EDITORIAL MASTHEAD & TAXONOMY NAV -->
+        <section class="w-full bg-surface py-space-xl">
+          <div class="max-w-[1360px] mx-auto px-margin">
+            <!-- Magazine Titleplate -->
+            <div
+              class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg pb-space-lg"
+            >
+              <div class="flex flex-col gap-space-xs max-w-3xl">
+                <div class="flex items-center gap-space-sm text-primary">
+                  <span class="w-8 h-[2px] bg-primary"></span>
+                  <span class="font-label-md text-label-md tracking-wider"
+                    >ژورنال تخصصی و مکتوبات کارگاهی</span
+                  >
+                  <span
+                    class="font-label-sm text-label-sm bg-secondary-container text-on-secondary-container px-space-sm py-0.5 rounded-full"
+                    >شماره چهل و دوم • بهار ۱۴۰۳</span
+                  >
+                </div>
+                <h1
+                  class="font-display-hero text-display-hero text-on-surface tracking-tight mt-space-xs"
+                >
+                  مجله و گاهنامه چرم بهبد
+                </h1>
+                <p
+                  class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed"
+                >
+                  روایت اصالت، دانش دباغی اصیل گیاهی، راهنمای مد و آیین نگهداری
+                  دست‌سازه‌های چرمی؛ پیوند دیرین میان هنر دست استادکار و زندگی
+                  روزمره معاصر.
+                </p>
+              </div>
+              <!-- Magazine Search & Reading-Time Filter -->
+              <div
+                class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-sm w-full lg:w-auto"
+              >
+                <div
+                  class="relative flex items-center bg-surface-container rounded-full px-space-md py-space-xs shadow-sm flex-1 sm:w-72"
+                >
+                  <span
+                    class="material-symbols-outlined text-outline text-[20px] ml-space-xs"
+                    >manage_search</span
+                  >
+                  <input
+                    class="bg-transparent border-0 outline-none font-body-sm text-body-sm text-on-surface placeholder-outline w-full"
+                    placeholder="جست‌وجوی جستارها، نگهداری چرم..."
+                    type="text"
+                  />
+                </div>
+                <div class="relative">
+                  <select
+                    class="appearance-none bg-surface-container-high text-on-surface-variant font-label-md text-label-md px-space-md py-space-sm rounded-full pr-space-md pl-space-xl cursor-pointer outline-none shadow-sm w-full sm:w-auto"
+                  >
+                    <option value="all">تمام زمان‌های مطالعه</option>
+                    <option value="quick">کوتاه (زیر ۵ دقیقه)</option>
+                    <option value="deep">جامع (۵ تا ۱۵ دقیقه)</option>
+                    <option value="research">جستار پژوهشی کارگاهی</option>
+                  </select>
+                  <span
+                    class="material-symbols-outlined absolute left-space-sm top-1/2 -translate-y-1/2 pointer-events-none text-outline text-[18px]"
+                    >expand_more</span
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Category Filter Chips -->
+            <div
+              class="flex items-center gap-space-sm overflow-x-auto pb-space-xs pt-space-sm scrollbar-none"
+              id="categoryChips"
+            >
+              <button
+                class="bg-primary text-on-primary font-label-md text-label-md px-space-md py-space-xs rounded-full shadow-sm whitespace-nowrap transition-transform active:scale-95"
+              >
+                همه مقالات (۵۴)
+              </button>
+              <button
+                class="bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-label-md text-label-md px-space-md py-space-xs rounded-full whitespace-nowrap transition-colors"
+              >
+                راهنمای نگهداری و واکس (۱۸)
+              </button>
+              <button
+                class="bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-label-md text-label-md px-space-md py-space-xs rounded-full whitespace-nowrap transition-colors"
+              >
+                اصول دباغی و متریال (۱۲)
+              </button>
+              <button
+                class="bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-label-md text-label-md px-space-md py-space-xs rounded-full whitespace-nowrap transition-colors"
+              >
+                استایل و ترکیب رنگ (۱۴)
+              </button>
+              <button
+                class="bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-label-md text-label-md px-space-md py-space-xs rounded-full whitespace-nowrap transition-colors"
+              >
+                فرهنگ دست‌دوز و پشت‌صحنه کارگاه (۱۰)
+              </button>
+            </div>
+          </div>
+        </section>
+        <!-- SECTION 2: HERO FEATURED STORY (BENTO EDITORIAL COVER) -->
+        <section class="w-full bg-surface pb-space-2xl">
+          <div class="max-w-[1360px] mx-auto px-margin">
+            <div
+              class="bg-surface-container-lowest rounded-xl shadow-xl overflow-hidden grid grid-cols-1 lg:grid-cols-12 gap-0 relative group"
+            >
+              <!-- Visual Column (7 Cols) -->
+              <div
+                class="lg:col-span-7 relative min-h-[420px] lg:min-h-[580px] overflow-hidden"
+              >
+                <img
+                  class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                  data-alt="An authentic artisanal leather workshop in Tabriz Iran bathed in warm golden afternoon sunlight. Master artisan hands using vintage brass skiving knife and waxed thread on rich vegetable-tanned cognac cowhide with beautiful natural pebble grain. Suede apron, wooden workbench with brass tools and edge bevelers in background with atmospheric dust motes and warm amber tones."
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHzinGHp0feY8OboFQa2tAiBcFqlt8Dtef00kYmshfzhNu1oFdLMWfrfMqLMA9qqrmWAuM9h8ODFGPcBuZBx2XdwhiL0svKBtVYafHNzj4O2UdBrJt_BR3urGeBiMStdB16UcXMB5uhwiIhX_XkxXYu7jDtscZjr6wpL5TQcLGW_2zwk07QimAujAMs4Q08etjG_wAyQ_mjdLSZCM6_-tJ87XjkQLFs8sPLyAWjio"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-on-background/80 via-on-background/30 to-transparent lg:hidden"
+                ></div>
+                <div
+                  class="absolute top-space-md right-space-md flex flex-wrap gap-space-xs"
+                >
+                  <span
+                    class="bg-surface-container-lowest/90 backdrop-blur-md text-primary font-label-sm text-label-sm px-space-sm py-1 rounded-full shadow-sm flex items-center gap-1"
+                  >
+                    <span
+                      class="material-symbols-outlined text-[16px] text-tertiary"
+                      >workspace_premium</span
+                    >
+                    روایت برگزیده آتلیه
+                  </span>
+                  <span
+                    class="bg-tertiary text-on-tertiary font-label-sm text-label-sm px-space-sm py-1 rounded-full shadow-sm"
+                  >
+                    شماره بهارانه
+                  </span>
+                </div>
+                <div
+                  class="absolute bottom-space-md right-space-md left-space-md text-on-primary lg:hidden"
+                >
+                  <span
+                    class="font-label-sm text-label-sm bg-primary/80 px-2 py-0.5 rounded"
+                    >زمان مطالعه: ۶ دقیقه</span
+                  >
+                  <h2
+                    class="font-headline-md text-headline-md text-surface font-bold mt-space-xs leading-snug"
+                  >
+                    راز ماندگاری نیم‌قرنی چرم دباغی گیاهی؛ چگونه گذر زمان به چرم
+                    وقار می‌بخشد؟
+                  </h2>
+                </div>
+              </div>
+              <!-- Editorial Copy Column (5 Cols) -->
+              <div
+                class="lg:col-span-5 p-space-lg lg:p-space-xl flex flex-col justify-between bg-surface-container-low"
+              >
+                <div class="flex flex-col gap-space-md">
+                  <!-- Breadcrumb metadata -->
+                  <div
+                    class="hidden lg:flex items-center gap-space-sm text-on-surface-variant font-label-sm text-label-sm"
+                  >
+                    <span class="text-primary font-bold"
+                      >اصول دباغی و دانش متریال</span
+                    >
+                    <span>•</span>
+                    <span class="flex items-center gap-1">
+                      <span class="material-symbols-outlined text-[16px]"
+                        >schedule</span
+                      >
+                      ۶ دقیقه مطالعه تحلیلی
+                    </span>
+                  </div>
+                  <!-- Main Heading desktop -->
+                  <h2
+                    class="hidden lg:block font-headline-lg text-headline-lg text-on-surface leading-snug group-hover:text-primary transition-colors"
+                  >
+                    راز ماندگاری نیم‌قرنی چرم دباغی گیاهی؛ چگونه گذر زمان به چرم
+                    وقار می‌بخشد؟
+                  </h2>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant leading-relaxed"
+                  >
+                    برخلاف دباغی شیمیایی کروم که بافت پروتئینی پوست را منجمد
+                    می‌کند، عصاره طبیعی بلوط و مازو به چرم فرصت نفس کشیدن
+                    می‌دهند. در این پژوهش کارگاهی بررسی می‌کنیم که چگونه پتینه
+                    (Patina) نه نشانه کهنگی، بلکه شناسنامه اصالت و شرافت کارکرد
+                    اثر است.
+                  </p>
+                  <!-- Quotes Snippet Box -->
+                  <div
+                    class="bg-surface-container p-space-md rounded-lg flex items-start gap-space-sm"
+                  >
+                    <span
+                      class="material-symbols-outlined text-primary text-[28px] shrink-0 mt-0.5"
+                      >format_quote</span
+                    >
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant italic"
+                    >
+                      «چرم طبیعی مانند شراب ناب است؛ هر چین و خطی که از تماس دست
+                      و آفتاب بر آن می‌افتد، حکایتی تازه از زندگی صاحبش را زمزمه
+                      می‌کند.»
+                    </p>
+                  </div>
+                </div>
+                <!-- Author Info & Read Action -->
+                <div
+                  class="pt-space-md mt-space-md flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md"
+                >
+                  <div class="flex items-center gap-space-sm">
+                    <img
+                      class="w-12 h-12 rounded-full object-cover shadow-sm ring-2 ring-primary/20"
+                      data-alt="Close up portrait of an experienced master leather craftsperson in late fifties with gentle eyes wearing round spectacles and an artisan work coat in a cozy studio setting with warm directional light."
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuhZ0ePa0KOXEalZnEYSnaHK2C8JxDQvTZHhjy9PwQpwvu90xgP303QkXZdj3MNghahQ-EOisVfT-sKe7PA6J59f7gXy8A1jiZK_K-bM4nGaFnMNkewVz4rmg3ym3yALjjxqS2yqcHEP1vqAKVJHoSDMcNlh8M445cvlurWJ5Jrncp1OZuWupwkkD43M3y2R6jaTbZfjaijcxjowamYphHmG7NFvMTT4EjK2jc7L8"
+                    />
+                    <div class="flex flex-col">
+                      <span class="font-label-md text-label-md text-on-surface"
+                        >استاد فرهاد بهبهانی</span
+                      >
+                      <span class="font-label-sm text-label-sm text-outline"
+                        >سرپرست کارگاه و آرشیو چرم بهبد • ۲۸ فروردین ۱۴۰۳</span
+                      >
+                    </div>
+                  </div>
+                  <a
+                    class="bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md px-space-lg py-space-sm rounded-lg flex items-center gap-space-xs transition-all duration-200 self-stretch sm:self-auto justify-center shadow-md hover:shadow-lg"
+                    href="#"
+                  >
+                    <span>مطالعه کامل یادداشت</span>
+                    <span class="material-symbols-outlined text-[18px]"
+                      >arrow_left</span
+                    >
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- SECTION 3: CURATED EDITORIAL GRID -->
+        <section class="w-full bg-surface-container-low py-space-2xl">
+          <div class="max-w-[1360px] mx-auto px-margin">
+            <!-- Section Header with Metrics -->
+            <div
+              class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl"
+            >
+              <div class="flex flex-col gap-space-xs">
+                <span
+                  class="font-label-sm text-label-sm text-primary tracking-wide"
+                  >آرشیو گزیده مقالات کاربردی</span
+                >
+                <h3
+                  class="font-headline-lg text-headline-lg text-on-surface font-bold"
+                >
+                  دانش‌نامه چرم و هنر دست
+                </h3>
+                <p
+                  class="font-body-md text-body-md text-on-surface-variant max-w-xl"
+                >
+                  دستورالعمل‌های آزموده شده کارگاهی، راهنماهای خرید مطمئن و
+                  تکنیک‌های مراقبت برای حفظ درخشش سرمایه‌های چرمی شما.
+                </p>
+              </div>
+              <div
+                class="flex items-center gap-space-xs bg-surface-container rounded-lg p-1"
+              >
+                <button
+                  class="px-space-md py-space-xs rounded-md bg-surface text-primary font-label-md text-label-md shadow-sm"
+                >
+                  تازه‌ترین جستارها
+                </button>
+                <button
+                  class="px-space-md py-space-xs rounded-md text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors"
+                >
+                  بیشترین بازخورد
+                </button>
+              </div>
+            </div>
+            <!-- The 6-Story Editorial Grid -->
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg"
+            >
+              <!-- Article 1: 5 Tests -->
+              <article
+                class="bg-surface rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group"
+              >
+                <div
+                  class="relative aspect-[16/10] overflow-hidden bg-surface-variant"
+                >
+                  <img
+                    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    data-alt="Microscopic tactile demonstration comparing genuine full-grain leather surface with synthetic polyurethane faux leather. Water droplet bead testing and gentle flex fold showing natural creasing versus artificial plastic elasticity, warm studio lighting with earth tone palette."
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDC7hVjPmk0KZkkIAx4z5zY-3D7uv3qLgmhrgmqyv_wchPfFks1OsYobM25Q2F8VBqHIgUh4KYIGcZ2wkURSSVKIHgm0oBBq7E5URJZaPeoQTX30D_Qs6rSH1gNrzOJQuCWE10LMBWeNQ_8rinsY3wRkRl5R4oeUqE6OXtJirkI_V6MiI4ppGbBQZIjOED3VOmvOh6HRuvGVUDgTWrxDnKT7aIV1-Hm0ziUfJM0AFg"
+                  />
+                  <span
+                    class="absolute top-space-sm right-space-sm bg-surface-container-highest/90 backdrop-blur-sm text-on-surface font-label-sm text-label-sm px-space-sm py-1 rounded-full"
+                  >
+                    راهنمای خرید
+                  </span>
+                  <div
+                    class="absolute bottom-space-sm left-space-sm bg-inverse-surface/80 text-inverse-on-surface font-label-sm text-label-sm px-space-sm py-0.5 rounded-full flex items-center gap-1"
+                  >
+                    <span class="material-symbols-outlined text-[14px]"
+                      >timer</span
+                    >
+                    ۵ دقیقه
+                  </div>
+                </div>
+                <div
+                  class="p-space-lg flex flex-col flex-1 justify-between gap-space-md"
+                >
+                  <div class="flex flex-col gap-space-xs">
+                    <div
+                      class="flex items-center justify-between text-outline font-label-sm text-label-sm"
+                    >
+                      <span>توسط آرش شمس</span>
+                      <span>۲۵ فروردین ۱۴۰۳</span>
+                    </div>
+                    <h4
+                      class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors leading-snug line-clamp-2"
+                    >
+                      ۵ آزمون ساده و بی‌خطر برای تشخیص چرم صددرصد طبیعی از فوم
+                      مصنوعی در بازار
+                    </h4>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3 leading-relaxed"
+                    >
+                      از آزمون قطره آب و بررسی منفذهای مویین سطح پوست تا بوی
+                      ارگانیک تانن؛ بدون نیاز به سوزاندن یا تخریب محصول، چرم
+                      اصیل را در چند ثانیه شناسایی کنید.
+                    </p>
+                  </div>
+                  <div class="flex items-center justify-between pt-space-sm">
+                    <span
+                      class="font-label-sm text-label-sm text-primary group-hover:underline flex items-center gap-1"
+                    >
+                      ادامه بررسی
+                      <span class="material-symbols-outlined text-[16px]"
+                        >arrow_left</span
+                      >
+                    </span>
+                    <span
+                      class="material-symbols-outlined text-outline group-hover:text-primary transition-colors text-[20px]"
+                      >bookmark_border</span
+                    >
+                  </div>
+                </div>
+              </article>
+              <!-- Article 2: Winter Waxing -->
+              <article
+                class="bg-surface rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group"
+              >
+                <div
+                  class="relative aspect-[16/10] overflow-hidden bg-surface-variant"
+                >
+                  <img
+                    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    data-alt="An artisanal horsehair brush and a brass container of organic beeswax leather balm resting beside an aged cognac leather messenger bag. Gentle hand applying balm in circular motions with a soft cotton cloth, soft diffused warm light highlights the nourishing oily sheen."
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXBCLmfbCMkNVuLLH4jCEOcrr_efs6OcmXtk606FxwPlMylfNR-R7cXK9o-cEJLVjcmQ9CVBzbDgzytMRiywIQN9KniRhhUIEMyHncZBSc5kLwj8nBdpJJHeCfWZSnZ-TFVESy7pmGdxaiiiby4An111FJSE0qW2NC-Jaa5jZrw6GLlHWOO2rVPbf_dGz0UFz7_3PbdrDHLhsyzNt5DFGAAuL879DJYu3y0WyL64U"
+                  />
+                  <span
+                    class="absolute top-space-sm right-space-sm bg-secondary-container/90 backdrop-blur-sm text-on-secondary-container font-label-sm text-label-sm px-space-sm py-1 rounded-full"
+                  >
+                    نگهداری و واکس
+                  </span>
+                  <div
+                    class="absolute bottom-space-sm left-space-sm bg-inverse-surface/80 text-inverse-on-surface font-label-sm text-label-sm px-space-sm py-0.5 rounded-full flex items-center gap-1"
+                  >
+                    <span class="material-symbols-outlined text-[14px]"
+                      >timer</span
+                    >
+                    ۷ دقیقه
+                  </div>
+                </div>
+                <div
+                  class="p-space-lg flex flex-col flex-1 justify-between gap-space-md"
+                >
+                  <div class="flex flex-col gap-space-xs">
+                    <div
+                      class="flex items-center justify-between text-outline font-label-sm text-label-sm"
+                    >
+                      <span>تیم مراقبت آتلیه</span>
+                      <span>۲۲ فروردین ۱۴۰۳</span>
+                    </div>
+                    <h4
+                      class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors leading-snug line-clamp-2"
+                    >
+                      اصول علمی واکس‌زنی و تغذیه چرم در فصل‌های سرد و خشک سال
+                    </h4>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3 leading-relaxed"
+                    >
+                      هوای سرد و گرمایش رادیاتورها رطوبت سلولی چرم را تخلیه
+                      می‌کنند. با جدول زمان‌بندی چربی‌رسانی با موم عسل طبیعی و
+                      روغن سم‌گاو، مانع ترک‌خوردگی عمیق کیف و کفش شوید.
+                    </p>
+                  </div>
+                  <div class="flex items-center justify-between pt-space-sm">
+                    <span
+                      class="font-label-sm text-label-sm text-primary group-hover:underline flex items-center gap-1"
+                    >
+                      ادامه بررسی
+                      <span class="material-symbols-outlined text-[16px]"
+                        >arrow_left</span
+                      >
+                    </span>
+                    <span
+                      class="material-symbols-outlined text-outline group-hover:text-primary transition-colors text-[20px]"
+                      >bookmark_border</span
+                    >
+                  </div>
+                </div>
+              </article>
+              <!-- Article 3: Style Guide -->
+              <article
+                class="bg-surface rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group"
+              >
+                <div
+                  class="relative aspect-[16/10] overflow-hidden bg-surface-variant"
+                >
+                  <img
+                    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    data-alt="Editorial flatlay menswear and womenswear capsule wardrobe featuring a handmade saddle tan briefcase, rich espresso leather watch strap, charcoal wool trousers and ivory cashmere knitwear arranged tastefully on rustic travertine stone surface with soft shadows."
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbCnfevdNzBRMAMG4xoRBUNnVRqTqy8nDnDL_vsCjOAKmVH8phjpV2fJxyQ0nmZ9zi_kYi9PJLXtvr0z9V2cQZCmhN3sEeqwwxikpBFhzYsNPtBxRv7a1nE2ogNTyeSd8XNTGechsIxABM19WpP4t2peJqN5tERQP9PfQ-iXMjIqlsst939gpMc38LuMLizB-xIkhQ0mRCEdV17nhDnCy9zyGUgBMBugMbn96s0b8"
+                  />
+                  <span
+                    class="absolute top-space-sm right-space-sm bg-surface-container-highest/90 backdrop-blur-sm text-on-surface font-label-sm text-label-sm px-space-sm py-1 rounded-full"
+                  >
+                    استایل و هماهنگی
+                  </span>
+                  <div
+                    class="absolute bottom-space-sm left-space-sm bg-inverse-surface/80 text-inverse-on-surface font-label-sm text-label-sm px-space-sm py-0.5 rounded-full flex items-center gap-1"
+                  >
+                    <span class="material-symbols-outlined text-[14px]"
+                      >timer</span
+                    >
+                    ۴ دقیقه
+                  </div>
+                </div>
+                <div
+                  class="p-space-lg flex flex-col flex-1 justify-between gap-space-md"
+                >
+                  <div class="flex flex-col gap-space-xs">
+                    <div
+                      class="flex items-center justify-between text-outline font-label-sm text-label-sm"
+                    >
+                      <span>مهناز کاویانی</span>
+                      <span>۱۹ فروردین ۱۴۰۳</span>
+                    </div>
+                    <h4
+                      class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors leading-snug line-clamp-2"
+                    >
+                      راهنمای ست‌کردن تناژهای قهوه‌ای کنیاکی و خاکی با استایل
+                      کاری و روزمره
+                    </h4>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3 leading-relaxed"
+                    >
+                      چگونه میان رنگ کمربند، کفش، و بند ساعت هارمونی طبیعی
+                      بیافرینیم بدون آنکه ظاهر رسمی بیش‌ازحد یکنواخت و تصنعی به
+                      چشم آید.
+                    </p>
+                  </div>
+                  <div class="flex items-center justify-between pt-space-sm">
+                    <span
+                      class="font-label-sm text-label-sm text-primary group-hover:underline flex items-center gap-1"
+                    >
+                      ادامه بررسی
+                      <span class="material-symbols-outlined text-[16px]"
+                        >arrow_left</span
+                      >
+                    </span>
+                    <span
+                      class="material-symbols-outlined text-outline group-hover:text-primary transition-colors text-[20px]"
+                      >bookmark_border</span
+                    >
+                  </div>
+                </div>
+              </article>
+              <!-- Article 4: Two-Needle Stitching -->
+              <article
+                class="bg-surface rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group"
+              >
+                <div
+                  class="relative aspect-[16/10] overflow-hidden bg-surface-variant"
+                >
+                  <img
+                    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    data-alt="Extreme macro shot of traditional saddle stitching in progress using two needles clamped in a wooden stitching pony. Amber waxed linen thread forming perfect diagonal stitch tension along grooved bevel on thick dark brown full-grain leather."
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDm0Ht_fgOVbtHCWsLLOWGQTVQgROfb6Dic8yqryDtjHczaSEZyb18UkFgjdi-5K-8pMPNQ_yhm_ZgezruIl4bYNlu2i2F1zpaTluDQhAxAlhxESAa4LicFtw2v1LQsrKsZiiGfZ-h0LAlRW9a_bWF1rzytdlqKdS5IsZRaxpllC30P8wV_oO4u-ZzYn7bUjZ8LjrbKroGbPqq8sAXYDQA-VN-HWSfYZLPSZb2mt8"
+                  />
+                  <span
+                    class="absolute top-space-sm right-space-sm bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm px-space-sm py-1 rounded-full"
+                  >
+                    مهندسی دست‌دوز
+                  </span>
+                  <div
+                    class="absolute bottom-space-sm left-space-sm bg-inverse-surface/80 text-inverse-on-surface font-label-sm text-label-sm px-space-sm py-0.5 rounded-full flex items-center gap-1"
+                  >
+                    <span class="material-symbols-outlined text-[14px]"
+                      >timer</span
+                    >
+                    ۸ دقیقه
+                  </div>
+                </div>
+                <div
+                  class="p-space-lg flex flex-col flex-1 justify-between gap-space-md"
+                >
+                  <div class="flex flex-col gap-space-xs">
+                    <div
+                      class="flex items-center justify-between text-outline font-label-sm text-label-sm"
+                    >
+                      <span>امید پوررضا</span>
+                      <span>۱۴ فروردین ۱۴۰۳</span>
+                    </div>
+                    <h4
+                      class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors leading-snug line-clamp-2"
+                    >
+                      چرا دوخت دوسوزنه دست‌دوز با نخ ابریشم موم‌زده هیچ‌گاه پاره
+                      نمی‌شود؟
+                    </h4>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3 leading-relaxed"
+                    >
+                      کالبدشکافی تفاوت بنیادی میان کوک چرخ‌خیاطی (Lockstitch) و
+                      گره قفل‌شونده دست‌دوز سنتی که حتی در صورت بریدگی یک کوک،
+                      باز هم از هم نمی‌پاشد.
+                    </p>
+                  </div>
+                  <div class="flex items-center justify-between pt-space-sm">
+                    <span
+                      class="font-label-sm text-label-sm text-primary group-hover:underline flex items-center gap-1"
+                    >
+                      ادامه بررسی
+                      <span class="material-symbols-outlined text-[16px]"
+                        >arrow_left</span
+                      >
+                    </span>
+                    <span
+                      class="material-symbols-outlined text-outline group-hover:text-primary transition-colors text-[20px]"
+                      >bookmark_border</span
+                    >
+                  </div>
+                </div>
+              </article>
+              <!-- Article 5: Leather Grains -->
+              <article
+                class="bg-surface rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group"
+              >
+                <div
+                  class="relative aspect-[16/10] overflow-hidden bg-surface-variant"
+                >
+                  <img
+                    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    data-alt="Four neatly rolled swatches of luxury cowhide leathers showing distinct textures side by side: pebbled floater, velvety nubuck split, silky smooth elegant full grain, and pull-up crazy horse leather in rustic tobacco and chocolate shades."
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuArHFzdSP1RcTxAoBa2YVBpJvA1kCftItetGLE8YvyTeQUghw1_ptUQ_1ZRCew7WvdLOMjt3bwDGNbPSn4RuCE83wzCwqJR4y1seGpGgqribQMt1r4SSvxW74Y4inc8JO5FocLKiXAmH_EjXiLxQV2PoDxeCyjvunPt9wEs6vTn7rvTDYpLk2XSw7pZ09WcN8mpUbI3ZmBfwIxSWxZxBo2tEez6LOLZ1wsn38hxdDw"
+                  />
+                  <span
+                    class="absolute top-space-sm right-space-sm bg-surface-container-highest/90 backdrop-blur-sm text-on-surface font-label-sm text-label-sm px-space-sm py-1 rounded-full"
+                  >
+                    دانشنامه متریال
+                  </span>
+                  <div
+                    class="absolute bottom-space-sm left-space-sm bg-inverse-surface/80 text-inverse-on-surface font-label-sm text-label-sm px-space-sm py-0.5 rounded-full flex items-center gap-1"
+                  >
+                    <span class="material-symbols-outlined text-[14px]"
+                      >timer</span
+                    >
+                    ۶ دقیقه
+                  </div>
+                </div>
+                <div
+                  class="p-space-lg flex flex-col flex-1 justify-between gap-space-md"
+                >
+                  <div class="flex flex-col gap-space-xs">
+                    <div
+                      class="flex items-center justify-between text-outline font-label-sm text-label-sm"
+                    >
+                      <span>کارگاه دباغی بهبد</span>
+                      <span>۰۸ فروردین ۱۴۰۳</span>
+                    </div>
+                    <h4
+                      class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors leading-snug line-clamp-2"
+                    >
+                      شناخت انواع بافت چرم گاوی: تفاوت فلوتر، اشبالت، الگانت و
+                      هورس
+                    </h4>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3 leading-relaxed"
+                    >
+                      راهنمای انتخاب بافت بر اساس نوع کاربرد؛ چرا چرم هورس برای
+                      کوله‌پشتی ماجراجویانه مناسب است و فلوتر بهترین گزینه برای
+                      کیف دستی روزمره مقاوم در برابر خش؟
+                    </p>
+                  </div>
+                  <div class="flex items-center justify-between pt-space-sm">
+                    <span
+                      class="font-label-sm text-label-sm text-primary group-hover:underline flex items-center gap-1"
+                    >
+                      ادامه بررسی
+                      <span class="material-symbols-outlined text-[16px]"
+                        >arrow_left</span
+                      >
+                    </span>
+                    <span
+                      class="material-symbols-outlined text-outline group-hover:text-primary transition-colors text-[20px]"
+                      >bookmark_border</span
+                    >
+                  </div>
+                </div>
+              </article>
+              <!-- Article 6: Traditional Tools -->
+              <article
+                class="bg-surface rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group"
+              >
+                <div
+                  class="relative aspect-[16/10] overflow-hidden bg-surface-variant"
+                >
+                  <img
+                    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    data-alt="Handcrafted traditional leather smithing steel tools laid out on aged Persian walnut wood block: antique crescent round knife with cherry wood handle, heavy brass pricking irons, bone folder, and polished edge burnisher in dramatic chiaroscuro side lighting."
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuApjmF62JFirv5kyAUU5j3Ivk6P7-3KxrCSS28Y_Fa8cpcN7aNoPPU1uKFpG5XFrXjtfm0KGU8LYTbtNHuludWf0lBg_aso6o7k1Sg_UcOFa0EftMGgZZf-qqeQPoz4Xf22VXaG-z4jeLJ1HuzQPrBlIyI5O8BaMKye2IHGWExilKT9ASJnV-Oucqe92mZlxcasUmYsH-KZhd3EA992qV2IvJ0tELIuQfwz5AL3HH4"
+                  />
+                  <span
+                    class="absolute top-space-sm right-space-sm bg-surface-container-highest/90 backdrop-blur-sm text-on-surface font-label-sm text-label-sm px-space-sm py-1 rounded-full"
+                  >
+                    میراث کهن
+                  </span>
+                  <div
+                    class="absolute bottom-space-sm left-space-sm bg-inverse-surface/80 text-inverse-on-surface font-label-sm text-label-sm px-space-sm py-0.5 rounded-full flex items-center gap-1"
+                  >
+                    <span class="material-symbols-outlined text-[14px]"
+                      >timer</span
+                    >
+                    ۹ دقیقه
+                  </div>
+                </div>
+                <div
+                  class="p-space-lg flex flex-col flex-1 justify-between gap-space-md"
+                >
+                  <div class="flex flex-col gap-space-xs">
+                    <div
+                      class="flex items-center justify-between text-outline font-label-sm text-label-sm"
+                    >
+                      <span>تحریریه فرهنگ ایرانی</span>
+                      <span>۲۹ اسفند ۱۴۰۲</span>
+                    </div>
+                    <h4
+                      class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors leading-snug line-clamp-2"
+                    >
+                      روایت ابزارسازی سنتی: گزن و سمبه‌های دست‌ساز استادکاران
+                      ایرانی
+                    </h4>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3 leading-relaxed"
+                    >
+                      سفری به راسته‌کوچه‌های آهنگران ایرانی؛ جایی که تیغه‌های
+                      فولادی آبدیده هنوز با روش دستی فورج می‌شوند تا چرم طبیعی
+                      را با ظرافت پوست برگ برش دهند.
+                    </p>
+                  </div>
+                  <div class="flex items-center justify-between pt-space-sm">
+                    <span
+                      class="font-label-sm text-label-sm text-primary group-hover:underline flex items-center gap-1"
+                    >
+                      ادامه بررسی
+                      <span class="material-symbols-outlined text-[16px]"
+                        >arrow_left</span
+                      >
+                    </span>
+                    <span
+                      class="material-symbols-outlined text-outline group-hover:text-primary transition-colors text-[20px]"
+                      >bookmark_border</span
+                    >
+                  </div>
+                </div>
+              </article>
+            </div>
+            <!-- Pagination / Load More Bar -->
+            <div
+              class="mt-space-2xl flex flex-col sm:flex-row items-center justify-between gap-space-md bg-surface p-space-md rounded-xl shadow-sm"
+            >
+              <span class="font-body-sm text-body-sm text-on-surface-variant">
+                نمایش ۶ مقاله از ۵۴ جستار تخصصی آرشیو بهبد
+              </span>
+              <div class="flex items-center gap-space-xs">
+                <button
+                  class="w-10 h-10 rounded-lg bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center"
+                >
+                  ۱
+                </button>
+                <button
+                  class="w-10 h-10 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center justify-center transition-colors"
+                >
+                  ۲
+                </button>
+                <button
+                  class="w-10 h-10 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center justify-center transition-colors"
+                >
+                  ۳
+                </button>
+                <span class="px-2 text-outline">...</span>
+                <button
+                  class="w-10 h-10 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center justify-center transition-colors"
+                >
+                  ۹
+                </button>
+                <button
+                  class="w-10 h-10 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface flex items-center justify-center transition-colors mr-space-xs"
+                >
+                  <span class="material-symbols-outlined text-[18px]"
+                    >chevron_left</span
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- SECTION 4: SHOP THE STORY / INTEGRATED COMMERCE STRIP -->
+        <section class="w-full bg-surface py-space-2xl">
+          <div class="max-w-[1360px] mx-auto px-margin">
+            <div
+              class="bg-gradient-to-r from-surface-container-highest via-surface-container to-surface-container-high rounded-xl p-space-lg lg:p-space-xl shadow-lg relative overflow-hidden"
+            >
+              <!-- Background Organic Aura SVG for subtle aesthetic elevation -->
+              <svg
+                class="absolute -left-20 -bottom-20 w-96 h-96 opacity-10 pointer-events-none text-primary"
+                fill="currentColor"
+                viewbox="0 0 200 200"
+              >
+                <path
+                  d="M42.7,-62.9C54.9,-54.1,64.1,-41.8,70.8,-27.7C77.4,-13.6,81.5,2.3,77.3,16.5C73.1,30.8,60.6,43.3,47.1,53.2C33.6,63.1,19.1,70.4,3.2,66C-12.7,61.6,-30,45.5,-44.6,32.3C-59.2,19.1,-71.1,8.9,-72.4,-2.2C-73.7,-13.3,-64.4,-25.2,-52.8,-35.1C-41.2,-45,-27.3,-52.8,-13.5,-59.8C0.3,-66.8,20.5,-73.1,32.7,-69.9C44.9,-66.7,30.5,-71.8,42.7,-62.9Z"
+                  transform="translate(100 100)"
+                ></path>
+              </svg>
+              <div
+                class="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-space-xl"
+              >
+                <!-- Text Narrative -->
+                <div
+                  class="flex flex-col gap-space-sm max-w-xl text-center lg:text-right"
+                >
+                  <div
+                    class="inline-flex items-center justify-center lg:justify-start gap-space-xs text-primary font-label-md text-label-md"
+                  >
+                    <span class="material-symbols-outlined text-[20px]"
+                      >shopping_bag</span
+                    >
+                    <span>پیوند داستان به محصول • اثر تحلیلی این شماره</span>
+                  </div>
+                  <h3
+                    class="font-headline-lg text-headline-lg text-on-surface font-bold leading-tight"
+                  >
+                    کیف اداری تمام‌چرم «هیراد» و کیت مراقبت موم عسل
+                  </h3>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant leading-relaxed"
+                  >
+                    همان آثاری که در مقاله «راز ماندگاری نیم‌قرنی چرم دباغی
+                    گیاهی» بررسی شد؛ دوخته‌شده از پوست دست‌چین ایرانی با نخ
+                    ابریشم هفت‌لا و پرداخت لبه سنتی. هم‌اکنون با بسته رایگان
+                    روغن طبیعی بهبد آماده سفارش است.
+                  </p>
+                  <div
+                    class="flex flex-wrap items-center justify-center lg:justify-start gap-space-md pt-space-xs"
+                  >
+                    <div class="flex items-center gap-space-xs text-on-surface">
+                      <span class="font-price-lg text-price-lg text-primary"
+                        >۴,۸۵۰,۰۰۰</span
+                      >
+                      <span class="font-label-sm text-label-sm text-outline"
+                        >تومان</span
+                      >
+                    </div>
+                    <span
+                      class="bg-primary/10 text-primary font-label-sm text-label-sm px-space-sm py-1 rounded-full"
+                    >
+                      شامل کیت روغن‌کاری هدیه
+                    </span>
+                  </div>
+                </div>
+                <!-- Featured Product Visual Cluster -->
+                <div
+                  class="flex items-center gap-space-md shrink-0 w-full sm:w-auto justify-center"
+                >
+                  <!-- Product Card 1 -->
+                  <div
+                    class="bg-surface rounded-xl p-space-sm shadow-md hover:shadow-xl transition-shadow w-44 sm:w-52 text-right group"
+                  >
+                    <div
+                      class="relative aspect-square rounded-lg overflow-hidden bg-surface-variant mb-space-xs"
+                    >
+                      <img
+                        class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                        data-alt="Handcrafted vegetable-tanned cognac cowhide luxury business briefcase Hirad with solid brass hardware locks placed upright on studio pedestal, rich warm reflections."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8qkQZk_61Aew8XT7Fh1MS9P17KqzYCgG1RAjIhrL7WVfCL7Jh1Pm2S0bbcbTXDO_PbFKRmCkDTrNb4mXRyVm2daXc8OUqYuxVrlG3-r6RMrNFFmFmlOq8v1UkEYXINYQLcM1lk9pgoEyDPqhJcjxqqU4FqB1Cd0ntVBZbfXD2POrt4cbPJguxCSZVHpYAnToHjp33474oxCuq2p3SN9YahCMmD5HgYtjSCwuOrIo"
+                      />
+                    </div>
+                    <span
+                      class="font-label-md text-label-md text-on-surface block truncate"
+                      >کیف اداری هیراد عسلی</span
+                    >
+                    <span class="font-body-sm text-body-sm text-outline block"
+                      >چرم گیاهی دوطرفه</span
+                    >
+                  </div>
+                  <!-- Product Card 2 (Addon) -->
+                  <div
+                    class="bg-surface rounded-xl p-space-sm shadow-md hover:shadow-xl transition-shadow w-44 sm:w-52 text-right group"
+                  >
+                    <div
+                      class="relative aspect-square rounded-lg overflow-hidden bg-surface-variant mb-space-xs"
+                    >
+                      <img
+                        class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                        data-alt="Behbod organic leather wax conditioner kit featuring brass tin with embossed logo, pure beeswax bar, horsehair brush and microfiber cloth on linen background."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtXhJofCnByJtZAcjofrr2EIpooBv1HodGTqsFzAkG514yQHvBxHZ_MSAP_s9vNSsuvuxaMojB7PDuE1OMnfrW5ok9S9ekfX1rToKYoZfkWCWH3QJVuPQW6XQHr5E7_tcLZDhZX30Mq2K14F21zb4Xg0exgy82fXomN-74BZe_EvrSkwPl9Guqol7OMJAziSndG8FHOcDBVxC8l5rYjegquCp__z5FG6HP2UnP_vo"
+                      />
+                    </div>
+                    <span
+                      class="font-label-md text-label-md text-on-surface block truncate"
+                      >کیت مراقبت و واکس موم</span
+                    >
+                    <span class="font-body-sm text-body-sm text-outline block"
+                      >فرمول کارگاه ایرانی</span
+                    >
+                  </div>
+                </div>
+                <!-- Purchase Call to Action -->
+                <div class="flex flex-col gap-space-xs w-full lg:w-auto">
+                  <a
+                    class="bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md px-space-xl py-space-md rounded-lg shadow-md hover:shadow-lg transition-all text-center flex items-center justify-center gap-space-xs whitespace-nowrap"
+                    href="#"
+                  >
+                    <span>مشاهده و سفارش سریع اثر</span>
+                    <span class="material-symbols-outlined text-[18px]"
+                      >arrow_left</span
+                    >
+                  </a>
+                  <span
+                    class="font-label-sm text-label-sm text-center text-outline"
+                    >ضمانت مادام‌العمر اصالت متریال</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- SECTION 5: EDITORIAL NEWSLETTER SUBSCRIPTION & DISPATCH -->
+        <section class="w-full bg-surface-container py-space-2xl">
+          <div class="max-w-[1360px] mx-auto px-margin">
+            <div
+              class="bg-surface-container-lowest rounded-xl shadow-lg p-space-lg md:p-space-2xl grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center"
+            >
+              <!-- Narrative invitation (7 cols) -->
+              <div class="lg:col-span-7 flex flex-col gap-space-md">
+                <div class="flex items-center gap-space-sm text-primary">
+                  <span class="material-symbols-outlined text-[24px]"
+                    >mark_email_read</span
+                  >
+                  <span class="font-label-md text-label-md font-bold"
+                    >اشتراک در حلقه مکتوبات بهبد</span
+                  >
+                </div>
+                <h3
+                  class="font-headline-lg text-headline-lg text-on-surface font-bold leading-snug"
+                >
+                  گاهنامه چاپی و جستارهای محرمانه آتلیه را دریافت کنید
+                </h3>
+                <p
+                  class="font-body-md text-body-md text-on-surface-variant leading-relaxed"
+                >
+                  ماهی یک‌بار، عصاره گفتگوهای تخصصی با کهنه‌کاران دباغی،
+                  تخفیف‌های محرمانه پیش‌خرید دست‌سازه‌های جدید و مقالات راهنمای
+                  واکس را در صندوق ایمیل یا بسته پستی خود داشته باشید. ما به
+                  آرامش و حریم خصوصی شما احترام می‌گذاریم.
+                </p>
+                <div
+                  class="grid grid-cols-1 sm:grid-cols-3 gap-space-md pt-space-xs"
+                >
+                  <div class="flex items-center gap-space-xs">
+                    <span
+                      class="material-symbols-outlined text-primary text-[20px]"
+                      >verified</span
+                    >
+                    <span class="font-label-sm text-label-sm text-on-surface"
+                      >بدون هرزنامه تبلیغاتی</span
+                    >
+                  </div>
+                  <div class="flex items-center gap-space-xs">
+                    <span
+                      class="material-symbols-outlined text-primary text-[20px]"
+                      >local_shipping</span
+                    >
+                    <span class="font-label-sm text-label-sm text-on-surface"
+                      >نسخه گزیده فصلی</span
+                    >
+                  </div>
+                  <div class="flex items-center gap-space-xs">
+                    <span
+                      class="material-symbols-outlined text-primary text-[20px]"
+                      >card_membership</span
+                    >
+                    <span class="font-label-sm text-label-sm text-on-surface"
+                      >کد تخفیف اختصاصی همراهان</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- Subscription Form Action Box (5 cols) -->
+              <div
+                class="lg:col-span-5 bg-surface-container-low p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md"
+              >
+                <span
+                  class="font-title-md text-title-md text-on-surface font-bold"
+                >
+                  دریافت رایگان نخستین جستار بهارانه
+                </span>
+                <form
+                  class="flex flex-col gap-space-sm"
+                  onsubmit="
+                    event.preventDefault();
+                    document
+                      .getElementById('newsletterSuccess')
+                      .classList.remove('hidden');
+                    this.classList.add('hidden');
+                  "
+                >
+                  <div>
+                    <label
+                      class="block font-label-sm text-label-sm text-on-surface-variant mb-1"
+                      >نام و نام خانوادگی گرامی</label
+                    >
+                    <input
+                      class="w-full bg-surface text-on-surface font-body-sm text-body-sm px-space-md py-space-sm rounded-lg outline-none focus:ring-1 focus:ring-primary shadow-sm"
+                      placeholder="مثلاً: علی رضایی"
+                      required=""
+                      type="text"
+                    />
+                  </div>
+                  <div>
+                    <label
+                      class="block font-label-sm text-label-sm text-on-surface-variant mb-1"
+                      >پست الکترونیکی یا شماره همراه</label
+                    >
+                    <input
+                      class="w-full bg-surface text-on-surface font-body-sm text-body-sm px-space-md py-space-sm rounded-lg outline-none focus:ring-1 focus:ring-primary shadow-sm text-left dir-ltr"
+                      placeholder="info@example.com یا ۰۹۱۲..."
+                      required=""
+                      type="text"
+                    />
+                  </div>
+                  <button
+                    class="bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md py-space-sm rounded-lg shadow-md transition-colors mt-space-xs flex items-center justify-center gap-space-xs"
+                    type="submit"
+                  >
+                    <span>پیوستن به همراهان مجله</span>
+                    <span class="material-symbols-outlined text-[18px]"
+                      >send</span
+                    >
+                  </button>
+                </form>
+                <div
+                  class="hidden p-space-md bg-secondary-container text-on-secondary-container rounded-lg text-center font-body-sm text-body-sm"
+                  id="newsletterSuccess"
+                >
+                  با سپاس؛ نخستین ویرایش جستار تحلیلی بهبد به همراه راهنمای واکس
+                  موم عسل برای شما ارسال شد.
+                </div>
+                <p class="font-label-sm text-label-sm text-outline text-center">
+                  امکان لغو عضویت با یک کلیک در هر زمان میسر است.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Interactive Filter Scripts -->
+        <script>
+          document.addEventListener("DOMContentLoaded", () => {
+            const chips = document.querySelectorAll("#categoryChips button");
+            chips.forEach((chip) => {
+              chip.addEventListener("click", () => {
+                chips.forEach((c) => {
+                  c.className =
+                    "bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-label-md text-label-md px-space-md py-space-xs rounded-full whitespace-nowrap transition-colors";
+                });
+                chip.className =
+                  "bg-primary text-on-primary font-label-md text-label-md px-space-md py-space-xs rounded-full shadow-sm whitespace-nowrap transition-transform active:scale-95";
+              });
+            });
+          });
+        </script>
+      </div>
+    </main>
+    <footer class="w-full bg-surface-container-low mt-space-2xl">
+      <div
+        class="max-w-[1360px] mx-auto px-margin py-space-2xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl"
+      >
+        <div class="lg:col-span-2 flex flex-col gap-space-md">
+          <div class="flex items-center gap-space-sm">
+            <div
+              class="w-8 h-8 rounded-lg bg-primary-container text-on-primary flex items-center justify-center font-headline-sm text-headline-sm"
+            >
+              ب
+            </div>
+            <span class="font-headline-sm text-headline-sm text-primary"
+              >چرم دست‌دوز بهبد</span
+            >
+          </div>
+          <p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+            هنر دست و اصالت چرم طبیعی با نگاهی نو به طراحی کاربردی روزمره. ما در
+            بهبد، گزیده‌ترین چرم‌های دباغی گیاهی را با دوخت استادکاران ایرانی
+            پیوند می‌زنیم تا آثاری ماندگار برای سالیان طولانی خلق کنیم.
+          </p>
+          <div class="flex items-center gap-space-sm mt-space-sm">
+            <span
+              class="font-label-sm text-label-sm bg-surface-container-high text-primary px-space-sm py-space-xs rounded-full"
+              >ضمانت چرم طبیعی ایرانی</span
+            ><span
+              class="font-label-sm text-label-sm bg-surface-container-high text-primary px-space-sm py-space-xs rounded-full"
+              >ارسال بسته‌بندی نفیس</span
+            >
+          </div>
+        </div>
+        <div class="flex flex-col gap-space-sm">
+          <span class="font-title-md text-title-md text-on-surface"
+            >محصولات بهبد</span
+          ><a
+            class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"
+            data-path="bags"
+            href="#"
+            >کیف دوشی و اداری</a
+          ><a
+            class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"
+            data-path="backpacks"
+            href="#"
+            >کوله‌پشتی مسافرتی و شهری</a
+          ><a
+            class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"
+            data-path="accessories"
+            href="#"
+            >جاکارتی و کیف جیبی</a
+          ><a
+            class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"
+            data-path="belts"
+            href="#"
+            >کمربند دوطرفه تمام‌چرم</a
+          ><a
+            class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"
+            data-path="gift-sets"
+            href="#"
+            >ست کادویی دست‌دوز</a
+          >
+        </div>
+        <div class="flex flex-col gap-space-sm">
+          <span class="font-title-md text-title-md text-on-surface"
+            >راهنمای مشتریان</span
+          ><a
+            class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"
+            data-path="leather-care"
+            href="#"
+            >اصول نگهداری و واکس چرم</a
+          ><a
+            class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"
+            data-path="returns"
+            href="#"
+            >شرایط بازگشت و تعویض ۷ روزه</a
+          ><a
+            class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"
+            data-path="order-tracking"
+            href="#"
+            >پیگیری سفارشات پستی</a
+          ><a
+            class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"
+            data-path="faq"
+            href="#"
+            >پرسش‌های متداول خریداران</a
+          ><a
+            class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"
+            data-path="contact"
+            href="#"
+            >تماس با آتلیه بهبد</a
+          >
+        </div>
+        <div class="flex flex-col gap-space-md">
+          <span class="font-title-md text-title-md text-on-surface"
+            >عضویت در حلقه بهبد</span
+          >
+          <p class="font-body-sm text-body-sm text-on-surface-variant">
+            با ثبت ایمیل یا شماره خود، از رونمایی محصولات جدید و تخفیف‌های فصلی
+            آگاه شوید.
+          </p>
+          <div
+            class="flex items-center bg-surface rounded-lg p-space-xs shadow-[0_1px_8px_rgba(43,30,22,0.04)]"
+          >
+            <input
+              class="bg-transparent border-0 outline-none font-body-sm text-body-sm text-on-surface placeholder-outline px-space-sm flex-1"
+              placeholder="ایمیل شما..."
+              type="email"
+            /><button
+              class="bg-primary text-on-primary font-label-md text-label-md px-space-md py-space-xs rounded-lg hover:bg-primary-container transition-colors"
+            >
+              عضویت
+            </button>
+          </div>
+          <div class="flex items-center gap-space-md mt-space-sm">
+            <div
+              class="w-14 h-14 rounded-lg bg-surface-container-highest flex items-center justify-center font-label-sm text-label-sm text-on-surface-variant text-center"
+            >
+              نماد اعتماد الکترونیکی
+            </div>
+            <div
+              class="w-14 h-14 rounded-lg bg-surface-container-highest flex items-center justify-center font-label-sm text-label-sm text-on-surface-variant text-center"
+            >
+              ضمانت اصالت فیزیکی
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bg-surface-container py-space-md px-margin text-center font-body-sm text-body-sm text-on-surface-variant"
+      >
+        <div
+          class="max-w-[1360px] mx-auto flex flex-col md:flex-row items-center justify-between gap-space-sm"
+        >
+          <span class=""
+            >تمامی حقوق مادی و معنوی متعلق به کارگاه چرم بهبد می‌باشد ©
+            ۱۴۰۳</span
+          >
+          <div class="flex items-center gap-space-lg">
+            <span class="">طراحی و اجرا با الهام از دباغی اصیل ایرانی</span
+            ><span class="">حفظ حریم خصوصی</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="shared.js" defer></script>
+  </body>
+</html>

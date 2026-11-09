@@ -1,0 +1,1637 @@
+<!-- تشخیص چرم طبیعی از مصنوعی | مجله چرم بهبد -->
+<!doctype html>
+
+<html dir="rtl" lang="fa">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="web_standard" name="shell-type" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100..900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      span,
+      a,
+      button,
+      input,
+      textarea,
+      select {
+        font-family:
+          "Yekan Bakh", "YekanBakh", "Vazirmatn", system-ui, sans-serif !important;
+      }
+    </style>
+    <style>
+      @layer base {
+        html,
+        body {
+          margin: 0;
+          padding: 0;
+        }
+        body {
+          overscroll-behavior: none;
+        }
+        main > :first-child {
+          margin-top: 0 !important;
+        }
+        main > :last-child {
+          margin-bottom: 0 !important;
+        }
+      }
+      ::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-primary-fixed-variant": "#693b1b",
+              "on-tertiary": "#ffffff",
+              "secondary-fixed": "#f6ded1",
+              "primary-container": "#8c5835",
+              "primary-fixed": "#ffdbc7",
+              "inverse-surface": "#343029",
+              "on-background": "#1f1b15",
+              "error-container": "#ffdad6",
+              outline: "#84746b",
+              "on-tertiary-fixed": "#301400",
+              "on-tertiary-fixed-variant": "#693b18",
+              "on-primary": "#ffffff",
+              surface: "#fff8f3",
+              "surface-container-lowest": "#ffffff",
+              "tertiary-container": "#8c5832",
+              "on-surface-variant": "#52443c",
+              "surface-container-highest": "#eae1d7",
+              "surface-container-low": "#fcf2e8",
+              tertiary: "#70411d",
+              secondary: "#6c5b51",
+              "on-secondary-fixed": "#251911",
+              "surface-bright": "#fff8f3",
+              "secondary-fixed-dim": "#d9c2b5",
+              "on-secondary-fixed-variant": "#54433a",
+              "secondary-container": "#f3dbce",
+              "primary-fixed-dim": "#fbb88e",
+              "on-primary-fixed": "#311300",
+              "on-primary-container": "#ffdbc6",
+              "on-error": "#ffffff",
+              "on-error-container": "#93000a",
+              primary: "#704120",
+              "on-secondary": "#ffffff",
+              "on-secondary-container": "#715f55",
+              "on-surface": "#1f1b15",
+              "surface-container-high": "#f0e7dd",
+              "outline-variant": "#d6c3b8",
+              "tertiary-fixed": "#ffdcc6",
+              "surface-variant": "#eae1d7",
+              error: "#ba1a1a",
+              "surface-tint": "#855230",
+              "inverse-on-surface": "#f9efe5",
+              "surface-dim": "#e1d9cf",
+              "inverse-primary": "#fbb88e",
+              background: "#fff8f3",
+              "tertiary-fixed-dim": "#fbb88a",
+              "surface-container": "#f6ece2",
+              "on-tertiary-container": "#ffdbc4",
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+            spacing: {
+              "margin-mobile": "1rem",
+              "space-xl": "2.5rem",
+              "space-lg": "1.5rem",
+              gutter: "1.5rem",
+              margin: "2.5rem",
+              "space-2xl": "4rem",
+              "space-xs": "0.25rem",
+              "space-sm": "0.5rem",
+              "gutter-mobile": "0.75rem",
+              "space-md": "1rem",
+            },
+            fontFamily: {
+              "label-md": ["Plus Jakarta Sans"],
+              "label-sm": ["Plus Jakarta Sans"],
+              "body-md": ["Plus Jakarta Sans"],
+              "display-hero-mobile": ["Plus Jakarta Sans"],
+              "title-md": ["Plus Jakarta Sans"],
+              "display-hero": ["Plus Jakarta Sans"],
+              "headline-md": ["Plus Jakarta Sans"],
+              "headline-md-mobile": ["Plus Jakarta Sans"],
+              "body-sm": ["Plus Jakarta Sans"],
+              "headline-lg-mobile": ["Plus Jakarta Sans"],
+              "body-lg": ["Plus Jakarta Sans"],
+              "price-lg": ["Plus Jakarta Sans"],
+              "headline-lg": ["Plus Jakarta Sans"],
+              "headline-sm": ["Plus Jakarta Sans"],
+              "price-sm": ["Plus Jakarta Sans"],
+            },
+            fontSize: {
+              "label-md": ["13px", { lineHeight: "18px", fontWeight: "600" }],
+              "label-sm": ["11px", { lineHeight: "16px", fontWeight: "500" }],
+              "body-md": ["14px", { lineHeight: "24px", fontWeight: "400" }],
+              "display-hero-mobile": [
+                "32px",
+                { lineHeight: "46px", fontWeight: "800" },
+              ],
+              "title-md": ["18px", { lineHeight: "28px", fontWeight: "600" }],
+              "display-hero": [
+                "48px",
+                { lineHeight: "68px", fontWeight: "800" },
+              ],
+              "headline-md": [
+                "28px",
+                { lineHeight: "42px", fontWeight: "600" },
+              ],
+              "headline-md-mobile": [
+                "22px",
+                { lineHeight: "34px", fontWeight: "600" },
+              ],
+              "body-sm": ["13px", { lineHeight: "22px", fontWeight: "400" }],
+              "headline-lg-mobile": [
+                "26px",
+                { lineHeight: "38px", fontWeight: "700" },
+              ],
+              "body-lg": ["16px", { lineHeight: "28px", fontWeight: "400" }],
+              "price-lg": ["22px", { lineHeight: "30px", fontWeight: "700" }],
+              "headline-lg": [
+                "36px",
+                { lineHeight: "52px", fontWeight: "700" },
+              ],
+              "headline-sm": [
+                "20px",
+                { lineHeight: "32px", fontWeight: "600" },
+              ],
+              "price-sm": ["16px", { lineHeight: "22px", fontWeight: "600" }],
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="shared.css" />
+  </head>
+  <body class="bg-background font-body-md text-on-surface antialiased">
+    <header
+      class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(43,30,22,0.04)]"
+    >
+      <div class="bg-surface-container-high py-space-xs px-margin">
+        <div
+          class="max-w-[1360px] mx-auto flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm"
+        >
+          <span class=""
+            >ارسال رایگان برای خریدهای بالای ۱.۵ میلیون تومان در سراسر
+            کشور</span
+          >
+          <div class="flex items-center gap-space-lg">
+            <span class="">ضمانت مادام‌العمر اصالت چرم طبیعی</span
+            ><span class="">پشتیبانی کارگاه و مشتریان: ۰۲۱-۸۸۹۹۰۰۱۱</span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="h-20 max-w-[1360px] mx-auto px-margin flex items-center justify-between gap-space-lg"
+      >
+        <div class="flex items-center gap-space-xl">
+          <a class="flex items-center gap-space-sm" data-path="home" href="#"
+            ><div
+              class="w-9 h-9 rounded-lg bg-primary-container text-on-primary flex items-center justify-center font-headline-sm text-headline-sm"
+            >
+              ب
+            </div>
+            <span
+              class="font-headline-sm text-headline-sm text-primary tracking-tight"
+              >چرم بهبد</span
+            ></a
+          >
+          <nav
+            class="hidden xl:flex items-center gap-space-md"
+            data-active-classes="bg-primary-container text-on-primary font-bold rounded-lg px-space-sm py-space-xs"
+          >
+            <a
+              class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors"
+              data-path="home"
+              href="#"
+              >صفحه اصلی</a
+            ><a
+              class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors"
+              data-path="bags"
+              href="#"
+              >کیف‌ها</a
+            ><a
+              class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors"
+              data-path="backpacks"
+              href="#"
+              >کوله‌پشتی</a
+            ><a
+              class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors"
+              data-path="accessories"
+              href="#"
+              >اکسسوری و جاکارتی</a
+            ><a
+              class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors"
+              data-path="belts"
+              href="#"
+              >کمربند</a
+            ><a
+              class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors"
+              data-path="gift-sets"
+              href="#"
+              >ست‌های هدیه</a
+            ><a
+              class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors"
+              data-path="magazine"
+              href="#"
+              >مجله بهبد</a
+            ><a
+              class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors"
+              data-path="about"
+              href="#"
+              >درباره بهبد</a
+            >
+          </nav>
+        </div>
+        <div class="flex items-center gap-space-md">
+          <div
+            class="hidden md:flex items-center bg-surface-container rounded-full px-space-md py-space-xs"
+          >
+            <span
+              class="material-symbols-outlined text-outline text-[20px] ml-space-xs"
+              >search</span
+            ><input
+              class="bg-transparent border-0 outline-none font-body-sm text-body-sm text-on-surface placeholder-outline w-48"
+              placeholder="جست‌وجوی کیف، چرم دست‌دوز..."
+              type="text"
+            />
+          </div>
+          <a
+            class="p-space-xs rounded-full hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors flex items-center"
+            data-path="account"
+            href="#"
+            ><span class="material-symbols-outlined text-[22px]"
+              >person</span
+            ></a
+          ><a
+            class="p-space-xs rounded-full hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors flex items-center"
+            data-path="wishlist"
+            href="#"
+            ><span class="material-symbols-outlined text-[22px]"
+              >favorite</span
+            ></a
+          ><a
+            class="relative p-space-xs rounded-full hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors flex items-center"
+            data-path="cart"
+            href="#"
+            ><span class="material-symbols-outlined text-[22px]"
+              >shopping_bag</span
+            ><span
+              class="absolute -top-1 -right-1 bg-primary text-on-primary font-label-sm text-label-sm w-5 h-5 rounded-full flex items-center justify-center"
+              >۳</span
+            ></a
+          ><img
+            alt="Profile"
+            class="w-8 h-8 rounded-full object-cover mr-space-xs"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2IhbS823eGR-sUrz-HGmMZNKDksrQ0fU-oHUFiqwZJUDvx77SDat6kfV8qvgyUEaW2JCCYpGyzUN-WCenX7oAl-Ftq3HpTtzh2lWHCHEnKPu0cwcOQOqamByJD49F9v6D20MIAGXwniEZQws1-54BsBTUgCwmZg1kM5s8LRrgdxWKFuoOpT9pnT2XEyOSZnOy4la1_0G8sYm-fCky6bmu5xYoBMoCrBIzSuaEfcs"
+          />
+        </div>
+      </div>
+    </header>
+    <main class="w-full pt-20 bg-background">
+      <div class="flex flex-col w-full">
+        <!-- Top Reading Progress Indicator -->
+        <div
+          class="sticky top-20 z-40 w-full bg-surface-container-high/60 backdrop-blur-md h-1.5 overflow-hidden"
+        >
+          <div
+            class="h-full bg-primary transition-all duration-150 ease-out w-0"
+            id="scrollProgressBar"
+          ></div>
+        </div>
+        <!-- Breadcrumb Navigation & Top Metadata Bar -->
+        <section class="w-full bg-surface-container-low/50 py-space-md">
+          <div class="max-w-[1360px] mx-auto px-margin">
+            <nav
+              aria-label="مسیر صفحه"
+              class="flex flex-wrap items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm"
+            >
+              <a
+                class="hover:text-primary transition-colors flex items-center gap-1"
+                href="#"
+              >
+                <span class="material-symbols-outlined text-[16px]">home</span>
+                <span>خانه</span>
+              </a>
+              <span class="material-symbols-outlined text-[14px] text-outline"
+                >chevron_left</span
+              >
+              <a class="hover:text-primary transition-colors" href="#"
+                >مجله بهبد</a
+              >
+              <span class="material-symbols-outlined text-[14px] text-outline"
+                >chevron_left</span
+              >
+              <a class="hover:text-primary transition-colors" href="#"
+                >راهنمای نگهداری و واکس</a
+              >
+              <span class="material-symbols-outlined text-[14px] text-outline"
+                >chevron_left</span
+              >
+              <span
+                class="text-on-surface truncate max-w-xs font-label-md text-label-md"
+                >۵ آزمون ساده و بی‌خطر برای تشخیص چرم طبیعی</span
+              >
+            </nav>
+          </div>
+        </section>
+        <!-- Editorial Header & Article Masthead -->
+        <article class="w-full max-w-[1360px] mx-auto px-margin pt-space-xl">
+          <div class="flex flex-col gap-space-lg max-w-4xl mx-auto text-right">
+            <!-- Taxonomy Badge & Reading Time -->
+            <div class="flex flex-wrap items-center gap-space-sm">
+              <span
+                class="bg-primary/10 text-primary px-space-md py-1 rounded-full font-label-md text-label-md flex items-center gap-1.5"
+              >
+                <span
+                  class="w-2 h-2 rounded-full bg-primary animate-pulse"
+                ></span>
+                راهنمای تخصصی کارگاهی
+              </span>
+              <span class="text-outline text-label-sm">•</span>
+              <span
+                class="text-on-surface-variant font-label-md text-label-md flex items-center gap-1"
+              >
+                <span
+                  class="material-symbols-outlined text-[18px] text-secondary"
+                  >schedule</span
+                >
+                ۷ دقیقه مطالعه مفید
+              </span>
+              <span class="text-outline text-label-sm">•</span>
+              <span
+                class="text-on-surface-variant font-label-md text-label-md flex items-center gap-1"
+              >
+                <span
+                  class="material-symbols-outlined text-[18px] text-secondary"
+                  >verified</span
+                >
+                تأییدیه آتلیه کنترل کیفیت
+              </span>
+            </div>
+            <!-- Main Headline -->
+            <h1
+              class="font-headline-lg text-headline-lg text-on-surface tracking-tight leading-relaxed"
+            >
+              ۵ آزمون تجربی و بدون آسیب برای تشخیص چرم اصیل طبیعی از چرم مصنوعی
+              در هنگام خرید
+            </h1>
+            <!-- Subtitle -->
+            <p
+              class="font-title-md text-title-md text-on-surface-variant leading-relaxed"
+            >
+              چگونه بدون سوزاندن یا تخریب محصول، ساختار منافذ، واکنش به رطوبت و
+              بوی واقعی دباغی گیاهی را ارزیابی کنیم؟
+            </p>
+            <!-- Author Box & Action Bar -->
+            <div
+              class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md pt-space-md bg-surface-container-low p-space-md rounded-xl shadow-sm"
+            >
+              <div class="flex items-center gap-space-md">
+                <img
+                  alt="مهندس آرمان رادمهر"
+                  class="w-14 h-14 rounded-full object-cover shadow-sm bg-surface-container-high"
+                  data-alt="Editorial portrait of master leather craftsman in artisanal workshop wearing a canvas apron inspecting vegetable tanned leather hides, soft warm side lighting, cinematic realistic depth of field"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMvjWE1wJ3dlX-ELvdFbdcfBL-HsXaxu0BpWkbE4yVX3Ph6ayAz0NP3TzkOXBvhZzBPgNl4h-CIcszaTMmxXFP67MwpM7JFYqGRUcJsRCbU2w7LJ6KKr04ZwebrDM1lIh1HAppXLVDXReWaFGps1hc8HCp5sYHgm9fMPT_lPbiQOIOxYgh6T2v_hXlpCLbCWhna6bPpLJ24HlkXQjQzvkuD9l-_CTrLB359IS3yrU"
+                />
+                <div class="flex flex-col">
+                  <div class="flex items-center gap-2">
+                    <span class="font-title-md text-title-md text-on-surface"
+                      >مهندس آرمان رادمهر</span
+                    >
+                    <span
+                      class="bg-secondary-container text-on-secondary-container text-label-sm font-label-sm px-2 py-0.5 rounded-full"
+                      >استادکار ارشد</span
+                    >
+                  </div>
+                  <span
+                    class="font-body-sm text-body-sm text-on-surface-variant"
+                    >کارشناس ارزیابی متریال و دباغی چرم آتلیه بهبد • ۲۴ فروردین
+                    ۱۴۰۳</span
+                  >
+                </div>
+              </div>
+              <!-- Social Share & Bookmarks -->
+              <div
+                class="flex items-center gap-space-xs self-end sm:self-center"
+              >
+                <button
+                  class="flex items-center gap-1.5 px-space-sm py-2 rounded-lg bg-surface text-on-surface hover:text-primary transition-all shadow-sm"
+                  id="bookmarkBtn"
+                  onclick="toggleBookmark()"
+                  title="نشان کردن مقاله"
+                >
+                  <span
+                    class="material-symbols-outlined text-[20px]"
+                    id="bookmarkIcon"
+                    >bookmark_border</span
+                  >
+                  <span class="font-label-sm text-label-sm hidden sm:inline"
+                    >نشان کردن</span
+                  >
+                </button>
+                <button
+                  class="p-2 rounded-lg bg-surface text-on-surface hover:text-primary transition-all shadow-sm"
+                  onclick="
+                    navigator.clipboard?.writeText(window.location.href);
+                    alert('پیوند مقاله کپی شد.');
+                  "
+                  title="کپی لینک مقاله"
+                >
+                  <span class="material-symbols-outlined text-[20px]"
+                    >share</span
+                  >
+                </button>
+                <button
+                  class="p-2 rounded-lg bg-surface text-on-surface hover:text-primary transition-all shadow-sm"
+                  onclick="window.print()"
+                  title="چاپ یا ذخیره PDF"
+                >
+                  <span class="material-symbols-outlined text-[20px]"
+                    >print</span
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Hero Feature Image Section -->
+          <div class="mt-space-xl max-w-5xl mx-auto flex flex-col gap-space-xs">
+            <div
+              class="relative w-full aspect-[16/9] md:aspect-[21/9] rounded-2xl overflow-hidden shadow-md bg-surface-container"
+            >
+              <img
+                alt="بافت چرم طبیعی فول گرین در آتلیه دست‌دوز بهبد"
+                class="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                data-alt="Macro close-up photograph of authentic full-grain cognac leather texture showing natural pores and organic wrinkles beside traditional wood burnisher, leather craft awl, and brass hardware in an artisan studio with soft amber natural daylight"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8ZwRRHmTeqar0vith2PrEQcz1gxL2R-V-6r-rts36BOIdgxJaTwVODNmOEE84fKEGfFZ8OmEi7XO_HWjySY7Kurd_SiEkSlpgv2gPz3QAtcg075Mc0nTWLmdqkk4abmy-IahY5iuSynLEP_XuKmL8qcOKKZTNCrNijtCZanTAAcWYY7__FmwnC-QD-zkGL5yWRrpj-QB4A7f592Kwkb3bWhZ-3hczOLHpGfdIJXw"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-on-background/70 via-transparent to-transparent flex items-end p-space-lg"
+              >
+                <span
+                  class="bg-surface-container-highest/90 backdrop-blur-md text-on-surface font-label-md text-label-md px-space-md py-1.5 rounded-lg flex items-center gap-2"
+                >
+                  <span
+                    class="material-symbols-outlined text-primary text-[18px]"
+                    >texture</span
+                  >
+                  پوشش نمای نزدیک: چرم گاوی دباغی گیاهی (Vegetable-Tanned Full
+                  Grain) با حفظ منافذ فولیکول طبیعی
+                </span>
+              </div>
+            </div>
+            <p
+              class="font-body-sm text-body-sm text-on-surface-variant text-center px-space-md mt-1"
+            >
+              تصویر کارگاهی: بررسی الگوی چین‌خوردگی ارگانیک در چرم ایرانی آتلیه
+              بهبد پیش از عملیات موم‌کشی و قالب‌گیری
+            </p>
+          </div>
+        </article>
+        <!-- Main Article Body & Sticky Sidebar Grid -->
+        <main class="w-full max-w-[1360px] mx-auto px-margin py-space-2xl">
+          <div
+            class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start"
+          >
+            <!-- Primary Article Column (8 Cols on Desktop) -->
+            <div class="lg:col-span-8 flex flex-col gap-space-xl text-right">
+              <!-- Lead Paragraph -->
+              <p
+                class="font-body-lg text-body-lg text-on-surface leading-loose bg-surface-container-low/70 p-space-lg rounded-xl shadow-sm first-letter:text-4xl first-letter:font-bold first-letter:text-primary"
+              >
+                در بازاری که پر از عبارات فریبنده مانند «چرم پی‌یو اعلا»، «چرم
+                صنعتی نانو» و «چرم گیاهی پلاستیکی» است، تشخیص چرم اصیل دباغی‌شده
+                به یکی از دغدغه‌های بنیادین خریداران فرهیخته تبدیل شده است.
+                بسیاری از خریداران گمان می‌کنند آزمودن چرم مستلزم به آتش کشیدن
+                آن با فندک یا خراشیدن با تیغ است؛ حال آن‌که یک ارزیاب خبره، با
+                تکیه بر پنج حس طبیعی و در کمتر از چند ثانیه، هویت بافت حیوانی را
+                کشف می‌کند بدون آنکه سرسوزنی به ظرافت اثر گزندی وارد آورد.
+              </p>
+              <!-- Test 1 -->
+              <section
+                class="flex flex-col gap-space-md scroll-mt-28"
+                id="test-1"
+              >
+                <div class="flex items-center gap-space-sm">
+                  <span
+                    class="w-10 h-10 rounded-xl bg-primary text-on-primary flex items-center justify-center font-headline-sm text-headline-sm shadow-sm"
+                    >۱</span
+                  >
+                  <h2 class="font-headline-md text-headline-md text-on-surface">
+                    آزمون اول: بافت نامنظم و منافذ طبیعی (ردپای زیست ارگانیک)
+                  </h2>
+                </div>
+                <p
+                  class="font-body-lg text-body-lg text-on-surface-variant leading-loose"
+                >
+                  چرم طبیعی حاصل حیات موجود زنده است و درست همانند سرانگشتان دست
+                  انسان، هیچ دو بخش از یک جلد چرم طبیعی الگوی کاملاً یکسان
+                  ندارند. هنگامی که یک کیف یا کمربند را بررسی می‌کنید، با
+                  ذره‌بین یا نگاه تیزبین به فاصله منافذ (پوست فولیکول مو) دقت
+                  کنید. در چرم مصنوعی (Faux Leather)، الگوهای پرس ماشینی در
+                  فواصل مشخص دقیقاً تکرار می‌شوند (Repeat Pattern)؛ گویی یک مهر
+                  مکانیکی روی وینیل زده شده باشد.
+                </p>
+                <div
+                  class="grid grid-cols-1 md:grid-cols-2 gap-space-md my-space-sm"
+                >
+                  <div
+                    class="bg-surface-container p-space-md rounded-xl flex flex-col gap-2"
+                  >
+                    <div
+                      class="flex items-center gap-2 text-primary font-title-md text-title-md"
+                    >
+                      <span class="material-symbols-outlined"
+                        >check_circle</span
+                      >
+                      <span>در چرم طبیعی اصیل:</span>
+                    </div>
+                    <p
+                      class="font-body-md text-body-md text-on-surface-variant leading-relaxed"
+                    >
+                      تراکم منافذ در ناحیه گردن و شکم متفاوت است؛ چین‌های ریز
+                      غیرمتقارن، خطوط طبیعی رشد و بافت دندانه‌دار منحصربه‌فرد
+                      دیده می‌شود.
+                    </p>
+                  </div>
+                  <div
+                    class="bg-surface-container-high p-space-md rounded-xl flex flex-col gap-2"
+                  >
+                    <div
+                      class="flex items-center gap-2 text-error font-title-md text-title-md"
+                    >
+                      <span class="material-symbols-outlined">cancel</span>
+                      <span>در چرم مصنوعی (PVC/PU):</span>
+                    </div>
+                    <p
+                      class="font-body-md text-body-md text-on-surface-variant leading-relaxed"
+                    >
+                      دانه‌ها کاملاً یک‌شکل، فاقد عمق طبیعی، بسیار متقارن با
+                      براقیت پلاستیکی یکنواخت و نبود هیچ‌گونه دانه منفذ باز
+                      هستند.
+                    </p>
+                  </div>
+                </div>
+              </section>
+              <!-- Test 2 -->
+              <section
+                class="flex flex-col gap-space-md scroll-mt-28"
+                id="test-2"
+              >
+                <div class="flex items-center gap-space-sm">
+                  <span
+                    class="w-10 h-10 rounded-xl bg-primary text-on-primary flex items-center justify-center font-headline-sm text-headline-sm shadow-sm"
+                    >۲</span
+                  >
+                  <h2 class="font-headline-md text-headline-md text-on-surface">
+                    آزمون دوم: تست قطره آب و هدایت رطوبت (Hydrophilic Response)
+                  </h2>
+                </div>
+                <p
+                  class="font-body-lg text-body-lg text-on-surface-variant leading-loose"
+                >
+                  یکی از بی‌خطرترین و در عین حال شگفت‌انگیزترین آزمایش‌ها،
+                  استفاده از یک قطره بسیار کوچک آب تمیز روی بخش نامحسوس محصول
+                  است. چرم دباغی طبیعی (به‌ویژه دباغی‌های گیاهی و نیمه‌گیاهی
+                  بدون لایه‌های ضخیم پلی‌استر) ساختاری متخلخل و جاذب دارد.
+                </p>
+                <!-- Infographic / Visual Step inside article -->
+                <div
+                  class="bg-surface-container-low p-space-lg rounded-2xl shadow-sm flex flex-col md:flex-row items-center gap-space-lg my-space-xs"
+                >
+                  <div class="w-full md:w-1/2 flex flex-col gap-space-sm">
+                    <span
+                      class="font-label-md text-label-md text-primary bg-primary-fixed text-on-primary-fixed px-space-sm py-1 rounded-full w-fit"
+                      >رفتار مولکولی</span
+                    >
+                    <h3 class="font-title-md text-title-md text-on-surface">
+                      چگونه تست قطره را اجرا کنیم؟
+                    </h3>
+                    <p
+                      class="font-body-md text-body-md text-on-surface-variant leading-relaxed"
+                    >
+                      سرانگشت خود را به قطره‌ای آب آغشته کرده و بر روی سطح چرم
+                      قرار دهید. در ظرف ۵ الی ۱۰ ثانیه، چرم طبیعی لکه ملایم
+                      رطوبت ایجاد کرده و آب را آهسته می‌کشد (که پس از چند دقیقه
+                      بدون آسیب خشک می‌شود). در مقابل، در چرم مصنوعی قطره آب
+                      مانند یک گوی جیوه روی پلاستیک غوطه‌ور مانده و سر می‌خورد.
+                    </p>
+                  </div>
+                  <div
+                    class="w-full md:w-1/2 flex items-center justify-center bg-surface p-space-md rounded-xl"
+                  >
+                    <!-- Inline Data Graphic / Diagram -->
+                    <svg
+                      class="w-full h-auto text-primary"
+                      fill="none"
+                      viewbox="0 0 240 140"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <!-- Leather Base -->
+                      <path
+                        d="M20 90 Q120 85 220 90 L220 120 L20 120 Z"
+                        fill="currentColor"
+                        fill-opacity="0.15"
+                      ></path>
+                      <path
+                        d="M20 90 Q120 85 220 90"
+                        stroke="currentColor"
+                        stroke-dasharray="4 2"
+                        stroke-width="2"
+                      ></path>
+                      <!-- Water Droplet Absorption -->
+                      <path
+                        d="M120 40 C110 55 95 65 95 78 C95 91 106 102 120 102 C134 102 145 91 145 78 C145 65 130 55 120 40 Z"
+                        fill="#8C5835"
+                        fill-opacity="0.3"
+                        stroke="#8C5835"
+                        stroke-width="2"
+                      ></path>
+                      <circle
+                        cx="120"
+                        cy="80"
+                        fill="#8C5835"
+                        fill-opacity="0.6"
+                        r="14"
+                      ></circle>
+                      <path
+                        d="M100 115 L140 115"
+                        stroke="#704120"
+                        stroke-linecap="round"
+                        stroke-width="3"
+                      ></path>
+                      <text
+                        fill="#52443C"
+                        font-family="Vazirmatn"
+                        font-size="10"
+                        text-anchor="middle"
+                        x="120"
+                        y="28"
+                      >
+                        نفوذ مویرگی در چرم طبیعی
+                      </text>
+                    </svg>
+                  </div>
+                </div>
+              </section>
+              <!-- Blockquote Callout -->
+              <blockquote
+                class="my-space-md bg-secondary-container/40 p-space-xl rounded-2xl relative shadow-sm"
+              >
+                <span
+                  class="material-symbols-outlined absolute top-4 right-4 text-primary/30 text-5xl select-none"
+                  >format_quote</span
+                >
+                <p
+                  class="font-headline-sm text-headline-sm text-on-surface leading-loose pr-6"
+                >
+                  «چرم طبیعی مانند یک سند زنده تاریخی است؛ با گذشت سالیان،
+                  پتینه‌ای نفیس (Patina) به خود می‌گیرد که عطر و خاطره روزهای
+                  زیسته را بازتاب می‌دهد. در حالی که چرم مصنوعی از نخستین روز
+                  استفاده رو به فرسایش و ترک می‌رود.»
+                </p>
+                <footer
+                  class="mt-space-md font-label-md text-label-md text-on-surface-variant flex items-center gap-2 pr-6"
+                >
+                  <span class="w-6 h-0.5 bg-primary"></span>
+                  استاد ابراهیم چیت‌ساز - سرپرست کارگاه دباغی بهبد
+                </footer>
+              </blockquote>
+              <!-- Test 3 -->
+              <section
+                class="flex flex-col gap-space-md scroll-mt-28"
+                id="test-3"
+              >
+                <div class="flex items-center gap-space-sm">
+                  <span
+                    class="w-10 h-10 rounded-xl bg-primary text-on-primary flex items-center justify-center font-headline-sm text-headline-sm shadow-sm"
+                    >۳</span
+                  >
+                  <h2 class="font-headline-md text-headline-md text-on-surface">
+                    آزمون سوم: بوی عمیق دباغی سنتی در مقابل بوی تینر و مشتقات
+                    نفتی
+                  </h2>
+                </div>
+                <p
+                  class="font-body-lg text-body-lg text-on-surface-variant leading-loose"
+                >
+                  شامه انسانی دقیق‌ترین ابزار سنجش ارگانیک است. چرم طبیعی اصیل
+                  بویی شیرین، خاکی، اندکی تند و یادآور پوست گردو، بلوط و چوب
+                  دارد که حاصل ماه‌ها فرآوری با تانن‌های طبیعی درخت اقاقیا و
+                  پوست بلوط در حوضچه‌های سنتی است. در طرف مقابل، حتی گران‌ترین
+                  چرم‌های مصنوعی پلی‌اورتان رایحه‌ای مشتق از مواد نفتی، تینر،
+                  وینیل یا پلاستیک فشرده متصاعد می‌کنند که حتی پس از ماه‌ها
+                  تهویه کاملاً از بین نمی‌رود.
+                </p>
+              </section>
+              <!-- Test 4 -->
+              <section
+                class="flex flex-col gap-space-md scroll-mt-28"
+                id="test-4"
+              >
+                <div class="flex items-center gap-space-sm">
+                  <span
+                    class="w-10 h-10 rounded-xl bg-primary text-on-primary flex items-center justify-center font-headline-sm text-headline-sm shadow-sm"
+                    >۴</span
+                  >
+                  <h2 class="font-headline-md text-headline-md text-on-surface">
+                    آزمون چهارم: نرمی، گرمای طبیعی لمس و آزمون فشار انگشت
+                    (Wrinkle Test)
+                  </h2>
+                </div>
+                <p
+                  class="font-body-lg text-body-lg text-on-surface-variant leading-loose"
+                >
+                  هنگامی که دست خود را بر سطح محصول چرمی می‌گذارید، چرم طبیعی به
+                  دلیل رسانایی حرارتی پایین و بافت بیولوژیکی، سریعاً حس سرمای
+                  اولیه را از دست داده و با گرمای کف دست شما هم‌دما می‌شود؛ در
+                  حالی که فوم‌های مصنوعی حس پلاستیکی خنک و لغزنده‌ای دارند.
+                </p>
+                <p
+                  class="font-body-lg text-body-lg text-on-surface-variant leading-loose"
+                >
+                  <strong>تست چین‌خوردگی:</strong> با نوک شست خود وسط چرم را
+                  اندکی به داخل فشار دهید. اگر در اطراف انگشت چروک‌های ریز و
+                  چندجهتی همانند پوست مچ دست پدیدار شد و پس از برداشتن دست به
+                  سرعت صاف و الاستیک گشت، با چرم درجه‌یک روبرو هستید. پلاستیک
+                  مصنوعی هنگام فشرده‌شدن مثل یک ورق سفت پایین می‌رود و چین‌های
+                  آن زاویه‌دار و غیرطبیعی است.
+                </p>
+              </section>
+              <!-- Test 5 -->
+              <section
+                class="flex flex-col gap-space-md scroll-mt-28"
+                id="test-5"
+              >
+                <div class="flex items-center gap-space-sm">
+                  <span
+                    class="w-10 h-10 rounded-xl bg-primary text-on-primary flex items-center justify-center font-headline-sm text-headline-sm shadow-sm"
+                    >۵</span
+                  >
+                  <h2 class="font-headline-md text-headline-md text-on-surface">
+                    آزمون پنجم: وارسی لبه‌های آزاد و بافت الیاف خام (Suede
+                    Fibers)
+                  </h2>
+                </div>
+                <p
+                  class="font-body-lg text-body-lg text-on-surface-variant leading-loose"
+                >
+                  به گوشه‌های دوخت، لبه‌های برگردانده‌نشده یا پشت زبانه زیپ دقت
+                  فرمایید. در چرم طبیعی لبه‌های برش‌خورده دارای تاروپود متراکم
+                  کلاژنی شبیه به جیر فشرده هستند که پرزهای طبیعی و بسیار ریزی
+                  دارند. اما در چرم‌های مصنوعی، در لبه برش‌ها ساختار تاروپود
+                  شبکه‌ای پارچه‌ای (توری بافت پلی‌استر سفید یا طوسی) کاملاً
+                  آشکار است؛ زیرا چرم مصنوعی صرفاً لایه‌ای نازک از وینیل مذاب
+                  است که روی زیره پارچه‌ای لمینت شده است.
+                </p>
+              </section>
+              <!-- Workshop Danger Alert Callout -->
+              <div
+                class="bg-error-container/40 p-space-lg rounded-2xl flex flex-col sm:flex-row gap-space-md items-start shadow-sm"
+              >
+                <div
+                  class="w-12 h-12 rounded-xl bg-error text-on-error flex items-center justify-center shrink-0"
+                >
+                  <span class="material-symbols-outlined text-2xl"
+                    >local_fire_department</span
+                  >
+                </div>
+                <div class="flex flex-col gap-1 text-right">
+                  <h4 class="font-title-md text-title-md text-error">
+                    هشدار مهم کارگاهی: چرا نباید هرگز تست فندک و سوزاندن را
+                    انجام داد؟
+                  </h4>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant leading-relaxed"
+                  >
+                    متأسفانه برخی فروشندگان نابلد، فندک زدن زیر محصول را ملاک
+                    اصالت معرفی می‌کنند. چرم طبیعی نیز در برابر شعله مستقیم بیش
+                    از ۳ ثانیه، رطوبت روغن‌های طبیعی خود را از دست داده، چروکیده
+                    و خشک می‌شود و روکش‌های محافظ رزینی آن آسیب جبران‌ناپذیر
+                    می‌بینند. سوزاندن چرم علاوه بر بدشکل کردن ظاهر لوکس محصول،
+                    ادعای غیرعلمی است و هیچ آتلیه استانداردی آن را توصیه
+                    نمی‌کند.
+                  </p>
+                </div>
+              </div>
+              <!-- Quick Comparison Matrix Table -->
+              <section class="flex flex-col gap-space-md pt-space-md">
+                <div class="flex items-center justify-between">
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface">
+                    جدول مقایسه جامع: چرم دباغی گیاهی بهبد در برابر چرم صنعتی
+                    (PU/PVC)
+                  </h3>
+                  <span
+                    class="font-label-sm text-label-sm text-on-surface-variant"
+                    >مستندات استاندارد ISO 17226</span
+                  >
+                </div>
+                <div
+                  class="overflow-x-auto rounded-xl shadow-sm bg-surface-container-low"
+                >
+                  <table class="w-full text-right font-body-md text-body-md">
+                    <thead
+                      class="bg-surface-container-high text-on-surface font-title-md text-title-md"
+                    >
+                      <tr>
+                        <th class="p-space-md">معیار ارزیابی</th>
+                        <th class="p-space-md text-primary">
+                          چرم اصیل گیاهی بهبد (Full-Grain)
+                        </th>
+                        <th class="p-space-md text-secondary">
+                          چرم مصنوعی (PU / PVC صنعتی)
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody class="text-on-surface-variant">
+                      <tr
+                        class="hover:bg-surface-container/60 transition-colors"
+                      >
+                        <td
+                          class="p-space-md font-label-md text-label-md text-on-surface"
+                        >
+                          طول عمر و دوام مفید
+                        </td>
+                        <td class="p-space-md text-primary font-semibold">
+                          بیش از ۱۰ تا ۲۵ سال (با مراقبت ادواری)
+                        </td>
+                        <td class="p-space-md text-outline">
+                          ۱ الی ۳ سال (پوسته‌پوسته شدن حتمی)
+                        </td>
+                      </tr>
+                      <tr
+                        class="hover:bg-surface-container/60 transition-colors bg-surface-container/30"
+                      >
+                        <td
+                          class="p-space-md font-label-md text-label-md text-on-surface"
+                        >
+                          تنفس‌پذیری و جریان هوا
+                        </td>
+                        <td class="p-space-md text-primary font-semibold">
+                          بسیار بالا به دلیل روزنه‌های مویرگی طبیعی
+                        </td>
+                        <td class="p-space-md text-outline">
+                          صفر؛ ایجاد تعریق و تجمع رطوبت داخلی
+                        </td>
+                      </tr>
+                      <tr
+                        class="hover:bg-surface-container/60 transition-colors"
+                      >
+                        <td
+                          class="p-space-md font-label-md text-label-md text-on-surface"
+                        >
+                          رایحه و عطر ظاهری
+                        </td>
+                        <td class="p-space-md text-primary font-semibold">
+                          بوی ارگانیک، تانن بلوط و موم زنبور عسل
+                        </td>
+                        <td class="p-space-md text-outline">
+                          بوی حلال‌های آلی شیمیایی، نفت و پلاستیک
+                        </td>
+                      </tr>
+                      <tr
+                        class="hover:bg-surface-container/60 transition-colors bg-surface-container/30"
+                      >
+                        <td
+                          class="p-space-md font-label-md text-label-md text-on-surface"
+                        >
+                          تغییر شکل به مرور زمان
+                        </td>
+                        <td class="p-space-md text-primary font-semibold">
+                          ایجاد پتینه (Patina) خوش‌رنگ و دلپذیر
+                        </td>
+                        <td class="p-space-md text-outline">
+                          ترک‌خوردگی عمیق، جدایش لایه پلیمری از آستر
+                        </td>
+                      </tr>
+                      <tr
+                        class="hover:bg-surface-container/60 transition-colors"
+                      >
+                        <td
+                          class="p-space-md font-label-md text-label-md text-on-surface"
+                        >
+                          بهای سرمایه‌گذاری
+                        </td>
+                        <td class="p-space-md text-primary font-semibold">
+                          ارزش پایدار متناسب با هنر استادکار
+                        </td>
+                        <td class="p-space-md text-outline">
+                          ارزان‌قیمت با هزینه تعویض مکرر سالانه
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </section>
+              <!-- Article Summary Tag Footer -->
+              <div class="flex flex-wrap items-center gap-space-xs pt-space-lg">
+                <span class="font-label-md text-label-md text-on-surface ml-2"
+                  >برچسب‌های موضوعی:</span
+                >
+                <a
+                  class="px-space-md py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm hover:bg-primary-container hover:text-on-primary transition-all"
+                  href="#"
+                  >#تشخیص_چرم_اصل</a
+                >
+                <a
+                  class="px-space-md py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm hover:bg-primary-container hover:text-on-primary transition-all"
+                  href="#"
+                  >#دباغی_گیاهی</a
+                >
+                <a
+                  class="px-space-md py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm hover:bg-primary-container hover:text-on-primary transition-all"
+                  href="#"
+                  >#نگهداری_چرم</a
+                >
+                <a
+                  class="px-space-md py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm hover:bg-primary-container hover:text-on-primary transition-all"
+                  href="#"
+                  >#کارگاه_بهبد</a
+                >
+              </div>
+              <!-- Interactive Article Feedback Module -->
+              <div
+                class="bg-surface-container p-space-lg rounded-2xl flex flex-col md:flex-row items-center justify-between gap-space-md shadow-sm"
+              >
+                <div class="flex items-center gap-space-sm text-right">
+                  <span class="material-symbols-outlined text-primary text-3xl"
+                    >thumb_up</span
+                  >
+                  <div>
+                    <h4 class="font-title-md text-title-md text-on-surface">
+                      آیا این راهنمای کارگاهی برای شما مفید واقع شد؟
+                    </h4>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant"
+                    >
+                      بازخورد شما سطح مقالات آتی مجله تخصصی را ارتقا می‌دهد.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="flex items-center gap-space-sm"
+                  id="feedbackContainer"
+                >
+                  <button
+                    class="px-space-lg py-2.5 rounded-lg bg-surface text-on-surface font-label-md text-label-md hover:bg-primary hover:text-on-primary transition-all flex items-center gap-1 shadow-sm"
+                    onclick="handleVote('yes')"
+                  >
+                    <span class="material-symbols-outlined text-[18px]"
+                      >thumb_up</span
+                    >
+                    <span>بله، بسیار کاربردی بود</span>
+                  </button>
+                  <button
+                    class="px-space-md py-2.5 rounded-lg bg-surface text-on-surface-variant font-label-md text-label-md hover:bg-surface-variant transition-all flex items-center gap-1"
+                    onclick="handleVote('no')"
+                  >
+                    <span class="material-symbols-outlined text-[18px]"
+                      >thumb_down</span
+                    >
+                    <span>خیر، نیاز به جزئیات بیشتر داشت</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Sticky Editorial Sidebar (4 Cols on Desktop) -->
+            <aside
+              class="lg:col-span-4 flex flex-col gap-space-xl lg:sticky lg:top-28"
+            >
+              <!-- Table of Contents Widget -->
+              <div
+                class="bg-surface-container-low p-space-lg rounded-2xl shadow-sm flex flex-col gap-space-md"
+              >
+                <div class="flex items-center justify-between text-on-surface">
+                  <div class="flex items-center gap-2">
+                    <span
+                      class="material-symbols-outlined text-primary text-[22px]"
+                      >format_list_numbered_rtl</span
+                    >
+                    <h3 class="font-title-md text-title-md">
+                      در این مقاله می‌خوانید:
+                    </h3>
+                  </div>
+                  <span
+                    class="text-xs bg-surface-container-high px-2 py-0.5 rounded-full text-secondary"
+                    >۵ سرفصل</span
+                  >
+                </div>
+                <nav
+                  class="flex flex-col gap-2 font-body-sm text-body-sm text-on-surface-variant"
+                >
+                  <a
+                    class="hover:text-primary transition-colors p-2 rounded-lg hover:bg-surface flex items-center justify-between"
+                    href="#test-1"
+                  >
+                    <span>۱. بافت نامنظم و منافذ طبیعی</span>
+                    <span
+                      class="material-symbols-outlined text-[16px] text-outline"
+                      >arrow_back</span
+                    >
+                  </a>
+                  <a
+                    class="hover:text-primary transition-colors p-2 rounded-lg hover:bg-surface flex items-center justify-between"
+                    href="#test-2"
+                  >
+                    <span>۲. تست قطره آب و واکنش هیدروفیلیک</span>
+                    <span
+                      class="material-symbols-outlined text-[16px] text-outline"
+                      >arrow_back</span
+                    >
+                  </a>
+                  <a
+                    class="hover:text-primary transition-colors p-2 rounded-lg hover:bg-surface flex items-center justify-between"
+                    href="#test-3"
+                  >
+                    <span>۳. بوی عمیق دباغی در مقابل بوی نفت</span>
+                    <span
+                      class="material-symbols-outlined text-[16px] text-outline"
+                      >arrow_back</span
+                    >
+                  </a>
+                  <a
+                    class="hover:text-primary transition-colors p-2 rounded-lg hover:bg-surface flex items-center justify-between"
+                    href="#test-4"
+                  >
+                    <span>۴. آزمون فشار انگشت و چین‌خوردگی</span>
+                    <span
+                      class="material-symbols-outlined text-[16px] text-outline"
+                      >arrow_back</span
+                    >
+                  </a>
+                  <a
+                    class="hover:text-primary transition-colors p-2 rounded-lg hover:bg-surface flex items-center justify-between"
+                    href="#test-5"
+                  >
+                    <span>۵. وارسی لبه‌های خام و پرز جیر</span>
+                    <span
+                      class="material-symbols-outlined text-[16px] text-outline"
+                      >arrow_back</span
+                    >
+                  </a>
+                </nav>
+              </div>
+              <!-- Direct Atelier Product Upsell Card -->
+              <div
+                class="bg-surface rounded-2xl overflow-hidden shadow-md flex flex-col"
+              >
+                <div
+                  class="relative w-full aspect-[4/3] bg-surface-container overflow-hidden group"
+                >
+                  <img
+                    alt="کیت روغن و موم محافظ چرم بهبد"
+                    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    data-alt="Artisanal leather care conditioning kit featuring glass amber jar of organic beeswax conditioner and soft horsehair polishing brush on rustic wood workbench"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6D-QcfnRTFc2piWUN-ZHxIhtGMZze41cu2SGF6Kkgjx_M25aetde_KIHbKXtmGTac00YDBJ0ScPrzmg5si4-gNJKg4gVfgImqsmS9EZCanj4hmA1LSAfjXU5hXw-bjVnbtoQwzAPz4BKB89bC6erOp3e-qZBn5T-vi3mvlxrVQbrKZRYbFmyiaFeH8um0R6SfVxMvMhBtJ0BnQyc8mnU9acsbulWbGBoSE7Oz7i8"
+                  />
+                  <span
+                    class="absolute top-3 right-3 bg-primary text-on-primary font-label-sm text-label-sm px-2.5 py-1 rounded-full shadow-sm"
+                  >
+                    پیشنهاد کارگاه
+                  </span>
+                </div>
+                <div class="p-space-lg flex flex-col gap-space-sm text-right">
+                  <span class="font-label-sm text-label-sm text-secondary"
+                    >محصول مراقبتی دست‌ساز</span
+                  >
+                  <h4 class="font-title-md text-title-md text-on-surface">
+                    کیت کامل روغن ارگانیک و موم زنبور عسل بهبد
+                  </h4>
+                  <p
+                    class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed"
+                  >
+                    فرمول ویژه آتلیه بهبد جهت حفظ لطافت، تغذیه لایه‌های کلاژن و
+                    ممانعت از ایجاد ترک‌های ناشی از خشکی فصل.
+                  </p>
+                  <div class="flex items-baseline justify-between pt-space-xs">
+                    <span
+                      class="font-label-md text-label-md text-on-surface-variant"
+                      >قیمت ویژه کارگاه:</span
+                    >
+                    <div class="flex items-center gap-1">
+                      <span class="font-price-lg text-price-lg text-primary"
+                        >۴۸۰,۰۰۰</span
+                      >
+                      <span
+                        class="font-label-sm text-label-sm text-on-surface-variant"
+                        >تومان</span
+                      >
+                    </div>
+                  </div>
+                  <button
+                    class="w-full mt-space-xs py-3 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-all flex items-center justify-center gap-2 shadow-sm"
+                  >
+                    <span class="material-symbols-outlined text-[20px]"
+                      >shopping_bag</span
+                    >
+                    <span>افزودن به سبد خرید</span>
+                  </button>
+                </div>
+              </div>
+              <!-- Recommended Related Articles -->
+              <div
+                class="bg-surface-container-low p-space-lg rounded-2xl shadow-sm flex flex-col gap-space-md"
+              >
+                <div class="flex items-center gap-2 text-on-surface">
+                  <span
+                    class="material-symbols-outlined text-primary text-[22px]"
+                    >auto_stories</span
+                  >
+                  <h3 class="font-title-md text-title-md">
+                    مقالات پیشنهادی مکمل
+                  </h3>
+                </div>
+                <div class="flex flex-col gap-space-md">
+                  <!-- Related 1 -->
+                  <a class="flex gap-space-sm items-center group" href="#">
+                    <img
+                      alt="روش‌های جلوگیری از ترک‌خوردن چرم در زمستان"
+                      class="w-16 h-16 rounded-xl object-cover shrink-0 bg-surface-container group-hover:opacity-90 transition-opacity"
+                      data-alt="Rich vintage leather boots and messenger bag being polished with natural beeswax in a cozy craftsman atelier with winter sunlight"
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcUtx-62rwUIp2-d9WB3_aqMcJ2FUOGiaeF2SacdB86Aa1p3zaCK7qLyW9fP6EtfgZ7amNacm7n8ZdQ990_3rtxSZclnA28Ljrakf-wUiVvgAhO-ntrPNhNf3i0UaNVmwl8GH-tnShHjQFNI_29NERSiH2RqnBiRA0yIGaCpUkmPEbCrYhHJwUMO08kwHJRnm4JCtQX29z2xbbU8OfboWnWkb0FJxEw7uprgJdydY"
+                    />
+                    <div class="flex flex-col gap-1 text-right">
+                      <h5
+                        class="font-label-md text-label-md text-on-surface group-hover:text-primary transition-colors line-clamp-2"
+                      >
+                        روش‌های اصولی جلوگیری از ترک‌خوردن چرم طبیعی در سرمای
+                        زمستان
+                      </h5>
+                      <span class="font-label-sm text-label-sm text-secondary"
+                        >۵ دقیقه مطالعه • ۲ هفته پیش</span
+                      >
+                    </div>
+                  </a>
+                  <!-- Related 2 -->
+                  <a class="flex gap-space-sm items-center group" href="#">
+                    <img
+                      alt="تفاوت دوخت دستی سراجی سنتی با دوخت چرخ خیاطی"
+                      class="w-16 h-16 rounded-xl object-cover shrink-0 bg-surface-container group-hover:opacity-90 transition-opacity"
+                      data-alt="Comparison of three leather belt edges and saddlery stitching thread on wooden cutting mat"
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqxdL81sSl8KtwwKRXCXyTSTztV86zkCSJXl28Czky-Kkicsg5MJc_L2ksk6gRMIXEGsWxA_dUakwnH0iphAKZSkKSjB608Ntr2bFg5XjLn6mCQ44sbzC1hRw2-1cTr8p-JcMxMXMhne4cH1j5vwdtWUZovyKmZYhSqvJZca0WV-YXEMHeluy2ZLSiBpxWwRiF3dYg5cAOexkW8RhUS9fPLZmAsMeySA2D3ZKt_ic"
+                    />
+                    <div class="flex flex-col gap-1 text-right">
+                      <h5
+                        class="font-label-md text-label-md text-on-surface group-hover:text-primary transition-colors line-clamp-2"
+                      >
+                        چرا دوخت دست‌دوز دو سوزنه (Saddle Stitch) هرگز شکافته
+                        نمی‌شود؟
+                      </h5>
+                      <span class="font-label-sm text-label-sm text-secondary"
+                        >۸ دقیقه مطالعه • ماه گذشته</span
+                      >
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </main>
+        <!-- Interactive Comments & Discussion Forum -->
+        <section class="w-full bg-surface-container-low/70 py-space-2xl">
+          <div class="max-w-[1360px] mx-auto px-margin">
+            <div class="max-w-4xl mx-auto flex flex-col gap-space-xl">
+              <!-- Header of Discussions -->
+              <div
+                class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm text-right"
+              >
+                <div>
+                  <h3 class="font-headline-md text-headline-md text-on-surface">
+                    دیدگاه‌ها و پرسش‌های کارگاهی (۴ نظر)
+                  </h3>
+                  <p class="font-body-md text-body-md text-on-surface-variant">
+                    پرسش‌های فنی خود در خصوص تست و اصالت چرم را با استادکاران
+                    بهبد مطرح کنید.
+                  </p>
+                </div>
+                <a
+                  class="px-space-md py-2 rounded-lg bg-surface text-primary font-label-md text-label-md hover:bg-surface-variant transition-all self-start sm:self-center shadow-sm"
+                  href="#commentForm"
+                >
+                  ثبت دیدگاه جدید ↓
+                </a>
+              </div>
+              <!-- Existing Comments Feed -->
+              <div class="flex flex-col gap-space-md">
+                <!-- Comment 1 -->
+                <div
+                  class="bg-surface p-space-lg rounded-2xl shadow-sm flex flex-col gap-space-sm text-right"
+                >
+                  <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-space-sm">
+                      <div
+                        class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-bold"
+                      >
+                        س
+                      </div>
+                      <div>
+                        <span
+                          class="font-title-md text-title-md text-on-surface"
+                          >سهراب امیدی</span
+                        >
+                        <span
+                          class="font-label-sm text-label-sm text-outline mr-2"
+                          >۳ روز پیش</span
+                        >
+                      </div>
+                    </div>
+                    <span
+                      class="text-xs bg-surface-container px-2 py-0.5 rounded-full text-secondary"
+                      >خریدار تأییدشده</span
+                    >
+                  </div>
+                  <p
+                    class="font-body-md text-body-md text-on-surface leading-relaxed"
+                  >
+                    بسیار ممنون از مقاله شفافتان. من تست قطره آب را روی کیف دستی
+                    هدیه انجام دادم و بلافاصله قطره را به خود کشید و پس از خشک
+                    شدن هم هیچ ردی نماند. خوشحالم که بدون آسیب توانستم مطمئن
+                    شوم.
+                  </p>
+                </div>
+                <!-- Comment 2: with Author Reply -->
+                <div class="flex flex-col gap-space-xs">
+                  <div
+                    class="bg-surface p-space-lg rounded-2xl shadow-sm flex flex-col gap-space-sm text-right"
+                  >
+                    <div class="flex items-center justify-between">
+                      <div class="flex items-center gap-space-sm">
+                        <div
+                          class="w-10 h-10 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center font-bold"
+                        >
+                          ن
+                        </div>
+                        <div>
+                          <span
+                            class="font-title-md text-title-md text-on-surface"
+                            >نیلوفر کیانی</span
+                          >
+                          <span
+                            class="font-label-sm text-label-sm text-outline mr-2"
+                            >۵ روز پیش</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <p
+                      class="font-body-md text-body-md text-on-surface leading-relaxed"
+                    >
+                      آیا برای کیف‌های ورنی که براق هستند هم این تست آب جواب
+                      می‌دهد؟ چون روی آن‌ها یک لایه لعاب شفاف وجود دارد.
+                    </p>
+                  </div>
+                  <!-- Atelier Reply Nested -->
+                  <div
+                    class="mr-space-xl bg-surface-container p-space-lg rounded-2xl shadow-sm flex flex-col gap-space-sm text-right"
+                  >
+                    <div class="flex items-center gap-space-sm">
+                      <div
+                        class="w-9 h-9 rounded-full bg-primary text-on-primary flex items-center justify-center text-sm font-bold"
+                      >
+                        آ
+                      </div>
+                      <div>
+                        <div class="flex items-center gap-2">
+                          <span class="font-title-md text-title-md text-primary"
+                            >پاسخ مهندس آرمان رادمهر</span
+                          >
+                          <span
+                            class="bg-primary/10 text-primary text-xs px-2 py-0.5 rounded-full"
+                            >نویسنده مقاله</span
+                          >
+                        </div>
+                        <span class="font-label-sm text-label-sm text-outline"
+                          >۴ روز پیش</span
+                        >
+                      </div>
+                    </div>
+                    <p
+                      class="font-body-md text-body-md text-on-surface leading-relaxed"
+                    >
+                      درود بر شما سرکار خانم کیانی. پرسش بسیار دقیقی است. در
+                      چرم‌های ورنی (Patent Leather)، یک لایه پلی‌اورتان براق
+                      نازک محافظ روی پوست کشیده می‌شود که مانع نفوذ سطحی آب است.
+                      در مورد چرم ورنی، بهترین راهکار «آزمون پنجم (بررسی لبه
+                      آزاد دوخت)» و همچنین «آزمون سوم (بوی استخوان‌بندی زیرین)»
+                      است.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Add Comment Form -->
+              <div
+                class="bg-surface p-space-xl rounded-2xl shadow-sm flex flex-col gap-space-md text-right"
+                id="commentForm"
+              >
+                <div class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-primary"
+                    >rate_review</span
+                  >
+                  <h4 class="font-headline-sm text-headline-sm text-on-surface">
+                    ثبت دیدگاه یا پرسش تخصصی
+                  </h4>
+                </div>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">
+                  کارشناسان آتلیه چرم بهبد معمولاً ظرف کمتر از ۲۴ ساعت کاری به
+                  پرسش‌های فنی پاسخ می‌دهند.
+                </p>
+                <form
+                  class="flex flex-col gap-space-md mt-space-xs"
+                  onsubmit="handleCommentSubmit(event)"
+                >
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+                    <div class="flex flex-col gap-1">
+                      <label class="font-label-md text-label-md text-on-surface"
+                        >نام و نام‌خانوادگی</label
+                      >
+                      <input
+                        class="h-12 px-space-md rounded-lg bg-surface-container-low text-on-surface outline-none focus:bg-surface focus:shadow-sm transition-all"
+                        placeholder="مثال: کیانوش اعتمادی"
+                        required=""
+                        type="text"
+                      />
+                    </div>
+                    <div class="flex flex-col gap-1">
+                      <label class="font-label-md text-label-md text-on-surface"
+                        >نشانی ایمیل (محرمانه خواهد ماند)</label
+                      >
+                      <input
+                        class="h-12 px-space-md rounded-lg bg-surface-container-low text-on-surface outline-none focus:bg-surface focus:shadow-sm transition-all text-left"
+                        dir="ltr"
+                        placeholder="name@example.com"
+                        required=""
+                        type="email"
+                      />
+                    </div>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <label class="font-label-md text-label-md text-on-surface"
+                      >متن نظر یا سؤال کارگاهی</label
+                    >
+                    <textarea
+                      class="p-space-md rounded-lg bg-surface-container-low text-on-surface outline-none focus:bg-surface focus:shadow-sm transition-all"
+                      placeholder="دیدگاه یا پرسش خود در ارتباط با این مقاله را بنویسید..."
+                      required=""
+                      rows="4"
+                    ></textarea>
+                  </div>
+                  <div class="flex items-center justify-between pt-space-xs">
+                    <label
+                      class="flex items-center gap-2 cursor-pointer font-body-sm text-body-sm text-on-surface-variant select-none"
+                    >
+                      <input
+                        class="w-4 h-4 rounded text-primary accent-primary"
+                        type="checkbox"
+                      />
+                      <span>ارسال پاسخ کارشناس از طریق ایمیل</span>
+                    </label>
+                    <button
+                      class="px-space-xl py-3 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-all flex items-center gap-2 shadow-sm"
+                      type="submit"
+                    >
+                      <span>ارسال دیدگاه</span>
+                      <span class="material-symbols-outlined text-[18px]"
+                        >send</span
+                      >
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Script for Reading Progress Bar and Interactive Controls -->
+        <script>
+          // Scroll progress bar calculation
+          window.addEventListener("scroll", () => {
+            const progressBar = document.getElementById("scrollProgressBar");
+            if (!progressBar) return;
+            const totalHeight =
+              document.documentElement.scrollHeight - window.innerHeight;
+            const progress = (window.pageYOffset / totalHeight) * 100;
+            progressBar.style.width =
+              Math.min(100, Math.max(0, progress)) + "%";
+          });
+
+          // Bookmark toggle
+          let isBookmarked = false;
+          function toggleBookmark() {
+            isBookmarked = !isBookmarked;
+            const icon = document.getElementById("bookmarkIcon");
+            const btn = document.getElementById("bookmarkBtn");
+            if (isBookmarked) {
+              icon.innerText = "bookmark";
+              icon.classList.add("text-primary");
+              btn.classList.add("bg-primary-fixed", "text-on-primary-fixed");
+            } else {
+              icon.innerText = "bookmark_border";
+              icon.classList.remove("text-primary");
+              btn.classList.remove("bg-primary-fixed", "text-on-primary-fixed");
+            }
+          }
+
+          // Article feedback micro-interaction
+          function handleVote(type) {
+            const container = document.getElementById("feedbackContainer");
+            if (type === "yes") {
+              container.innerHTML =
+                '<span class="text-primary font-label-md text-label-md flex items-center gap-1.5"><span class="material-symbols-outlined">check_circle</span>از بازخورد پرمهرتان سپاسگزاریم!</span>';
+            } else {
+              container.innerHTML =
+                '<span class="text-on-surface-variant font-label-md text-label-md">سپاس، سعی می‌کنیم در نسخه‌های بعدی کامل‌ترش کنیم.</span>';
+            }
+          }
+
+          // Comment form feedback
+          function handleCommentSubmit(event) {
+            event.preventDefault();
+            alert(
+              "دیدگاه شما با موفقیت دریافت گردید و پس از ارزیابی نمایش داده خواهد شد.",
+            );
+            event.target.reset();
+          }
+        </script>
+      </div>
+    </main>
+    <footer class="w-full bg-surface-container-low mt-space-2xl">
+      <div
+        class="max-w-[1360px] mx-auto px-margin py-space-2xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl"
+      >
+        <div class="lg:col-span-2 flex flex-col gap-space-md">
+          <div class="flex items-center gap-space-sm">
+            <div
+              class="w-8 h-8 rounded-lg bg-primary-container text-on-primary flex items-center justify-center font-headline-sm text-headline-sm"
+            >
+              ب
+            </div>
+            <span class="font-headline-sm text-headline-sm text-primary"
+              >چرم دست‌دوز بهبد</span
+            >
+          </div>
+          <p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+            هنر دست و اصالت چرم طبیعی با نگاهی نو به طراحی کاربردی روزمره. ما در
+            بهبد، گزیده‌ترین چرم‌های دباغی گیاهی را با دوخت استادکاران ایرانی
+            پیوند می‌زنیم تا آثاری ماندگار برای سالیان طولانی خلق کنیم.
+          </p>
+          <div class="flex items-center gap-space-sm mt-space-sm">
+            <span
+              class="font-label-sm text-label-sm bg-surface-container-high text-primary px-space-sm py-space-xs rounded-full"
+              >ضمانت چرم طبیعی ایرانی</span
+            ><span
+              class="font-label-sm text-label-sm bg-surface-container-high text-primary px-space-sm py-space-xs rounded-full"
+              >ارسال بسته‌بندی نفیس</span
+            >
+          </div>
+        </div>
+        <div class="flex flex-col gap-space-sm">
+          <span class="font-title-md text-title-md text-on-surface"
+            >محصولات بهبد</span
+          ><a
+            class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"
+            data-path="bags"
+            href="#"
+            >کیف دوشی و اداری</a
+          ><a
+            class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"
+            data-path="backpacks"
+            href="#"
+            >کوله‌پشتی مسافرتی و شهری</a
+          ><a
+            class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"
+            data-path="accessories"
+            href="#"
+            >جاکارتی و کیف جیبی</a
+          ><a
+            class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"
+            data-path="belts"
+            href="#"
+            >کمربند دوطرفه تمام‌چرم</a
+          ><a
+            class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"
+            data-path="gift-sets"
+            href="#"
+            >ست کادویی دست‌دوز</a
+          >
+        </div>
+        <div class="flex flex-col gap-space-sm">
+          <span class="font-title-md text-title-md text-on-surface"
+            >راهنمای مشتریان</span
+          ><a
+            class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"
+            data-path="leather-care"
+            href="#"
+            >اصول نگهداری و واکس چرم</a
+          ><a
+            class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"
+            data-path="returns"
+            href="#"
+            >شرایط بازگشت و تعویض ۷ روزه</a
+          ><a
+            class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"
+            data-path="order-tracking"
+            href="#"
+            >پیگیری سفارشات پستی</a
+          ><a
+            class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"
+            data-path="faq"
+            href="#"
+            >پرسش‌های متداول خریداران</a
+          ><a
+            class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"
+            data-path="contact"
+            href="#"
+            >تماس با آتلیه بهبد</a
+          >
+        </div>
+        <div class="flex flex-col gap-space-md">
+          <span class="font-title-md text-title-md text-on-surface"
+            >عضویت در حلقه بهبد</span
+          >
+          <p class="font-body-sm text-body-sm text-on-surface-variant">
+            با ثبت ایمیل یا شماره خود، از رونمایی محصولات جدید و تخفیف‌های فصلی
+            آگاه شوید.
+          </p>
+          <div
+            class="flex items-center bg-surface rounded-lg p-space-xs shadow-[0_1px_8px_rgba(43,30,22,0.04)]"
+          >
+            <input
+              class="bg-transparent border-0 outline-none font-body-sm text-body-sm text-on-surface placeholder-outline px-space-sm flex-1"
+              placeholder="ایمیل شما..."
+              type="email"
+            /><button
+              class="bg-primary text-on-primary font-label-md text-label-md px-space-md py-space-xs rounded-lg hover:bg-primary-container transition-colors"
+            >
+              عضویت
+            </button>
+          </div>
+          <div class="flex items-center gap-space-md mt-space-sm">
+            <div
+              class="w-14 h-14 rounded-lg bg-surface-container-highest flex items-center justify-center font-label-sm text-label-sm text-on-surface-variant text-center"
+            >
+              نماد اعتماد الکترونیکی
+            </div>
+            <div
+              class="w-14 h-14 rounded-lg bg-surface-container-highest flex items-center justify-center font-label-sm text-label-sm text-on-surface-variant text-center"
+            >
+              ضمانت اصالت فیزیکی
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bg-surface-container py-space-md px-margin text-center font-body-sm text-body-sm text-on-surface-variant"
+      >
+        <div
+          class="max-w-[1360px] mx-auto flex flex-col md:flex-row items-center justify-between gap-space-sm"
+        >
+          <span class=""
+            >تمامی حقوق مادی و معنوی متعلق به کارگاه چرم بهبد می‌باشد ©
+            ۱۴۰۳</span
+          >
+          <div class="flex items-center gap-space-lg">
+            <span class="">طراحی و اجرا با الهام از دباغی اصیل ایرانی</span
+            ><span class="">حفظ حریم خصوصی</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="shared.js" defer></script>
+  </body>
+</html>
